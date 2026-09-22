@@ -4,6 +4,8 @@
 
 Built by [Joan Sterjo](https://github.com/joansterjo).
 
+**[Visit the TokenLens product page](https://joansterjo.github.io/tokenlens/)** for an interactive preview, downloads and installation instructions.
+
 **[Download TokenLens v0.1.0](https://github.com/joansterjo/tokenlens/releases/download/v0.1.0/tokenlens-0.1.0.zip)** · [Download with per-site permissions](https://github.com/joansterjo/tokenlens/releases/download/v0.1.0/tokenlens-0.1.0-optional-permissions.zip) · [Release notes](https://github.com/joansterjo/tokenlens/releases/tag/v0.1.0)
 
 ![TokenLens interface showing a selected component, design tokens, a color editor and component details](docs/ui/panel-wide.png)
@@ -94,6 +96,8 @@ pnpm build
 Load the generated **`dist`** folder through `chrome://extensions`. `pnpm build:store` produces the per-site permissions build in **`dist-store`**; the script name does not imply Chrome Web Store publication.
 
 To rebuild both downloadable ZIPs and their `SHA256SUMS` file in **`releases`**, run `pnpm package`. Release packaging also requires **Python 3**.
+
+The product website lives in **`site`**. Run `pnpm site:preview` to build and preview it at `http://127.0.0.1:4176` (Python 3 required for the preview server), or `pnpm site:build` for the static output in **`.site-dist`**. Changes to the website on `main` deploy automatically to GitHub Pages through the [Pages workflow](.github/workflows/pages.yml).
 
 ```sh
 pnpm dev

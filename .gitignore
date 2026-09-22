@@ -5,6 +5,7 @@ dist-dev/
 playwright-report/
 test-results/
 /releases/
+.site-dist/
 __pycache__/
 .DS_Store
 *.log
