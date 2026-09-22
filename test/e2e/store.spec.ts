@@ -25,7 +25,7 @@ test('optional-permission package injects its loader and persists a granted site
     const ready=()=>worker.evaluate(async id=>(await chrome.scripting.executeScript({target:{tabId:id},func:()=>Boolean(globalThis.__TOKENLENS__)}))[0].result,tabId);
     expect(await ready()).toBe(false);
     const popup=await context.newPage(); await popup.goto(`chrome-extension://${new URL(worker.url()).host}/src/popup/popup.html`);
-    expect(await popup.evaluate(id=>chrome.runtime.sendMessage({type:'tokenlens:inject',tabId:id}),tabId)).toEqual({ok:true});
+    expect(await popup.evaluate(id=>chrome.runtime.sendMessage({type:'tokenlens:inject',tabId:id}),tabId)).toMatchObject({ok:true,status:{connected:true}});
     await expect.poll(ready).toBe(true);
     expect((await worker.evaluate(()=>chrome.scripting.getRegisteredContentScripts())).length).toBe(1);
     await page.reload(); await expect.poll(ready).toBe(true);

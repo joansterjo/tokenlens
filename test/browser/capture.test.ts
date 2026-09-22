@@ -22,6 +22,8 @@ describe('live browser capture', () => {
   test('H3 IACVT uses unset, does not resurrect a losing declaration', async () => withPage(wrap(':root{--a:var(--b);--b:var(--a)}#target{color:blue;color:var(--a)}body{color:rgb(10,20,30)}'), doc => {
     const report = captureElement(doc.querySelector('#target')!);
     expect(report.properties.find(p => p.property === 'color')?.computedValue).toBe('rgb(10, 20, 30)');
+    expect(report.tokensInScope['--a'].computedValue).toBe('');
+    expect(report.tokensInScope['--b'].computedValue).toBe('');
     expect(report.diagnostics.some(d => d.code === 'CYCLE_DETECTED')).toBe(true);
   }));
   test('H4 important layers invert, normal unlayered rules win', async () => withPage(wrap('@layer a,b;@layer a{#target{--x:red!important;--y:red}}@layer b{#target{--x:blue!important;--y:blue}}#target{--x:green!important;--y:green}'), doc => {
@@ -122,6 +124,20 @@ describe('live browser capture', () => {
     const report = captureElement(doc.querySelector('#target')!);
     expect(report.sheets[0].reparsed).toBe(false);
     expect(report.diagnostics.some(d => d.code === 'SHEET_REPARSE_FAILED')).toBe(true);
+  }));
+  test('recovered declarations preserve an empty browser token when fetched CSS differs', async () => withPage(wrap('#target{--foreign:initial;color:var(--foreign,green)}'), doc => {
+    const target = doc.querySelector('#target')!, sheet = doc.styleSheets[0];
+    const url = 'https://foreign.example/changed.css';
+    Object.defineProperty(sheet, 'href', { get: () => url });
+    Object.defineProperty(sheet, 'cssRules', { get: () => { throw new DOMException('Cross origin', 'SecurityError'); } });
+    expect(recoverStyleSheet(url, '#target{--foreign:red;color:var(--foreign,green)}', doc)).toBe(true);
+    const report = captureElement(target);
+    expect(report.tokensInScope['--foreign'].computedValue).toBe('');
+    expect(report.tokensInScope['--foreign'].rawValue).toBe('red');
+    expect(report.tokensInScope['--foreign'].terminalValue).toBe('red');
+    expect(report.properties.find(property => property.property === 'color')?.computedValue).toBe('rgb(0, 128, 0)');
+    expect(report.diagnostics.some(diagnostic => diagnostic.code === 'PROBE_MISMATCH' && diagnostic.token === '--foreign')).toBe(true);
+    expect(doc.adoptedStyleSheets).toHaveLength(0);
   }));
   test('H10 aliases consume a registered token after typed computation', async () => withPage(wrap('@property --ink{syntax:"<color>";inherits:true;initial-value:teal}:root{--alias:var(--ink)}#target{color:var(--alias)}'), doc => {
     const report = captureElement(doc.querySelector('#target')!);

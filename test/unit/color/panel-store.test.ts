@@ -12,7 +12,46 @@ function setup() {
   return { store, sent, receive };
 }
 
+describe('browser values and partial source tracing', () => {
+  it('shows the browser token value while preserving a disagreeing alias trace', () => {
+    const partial = structuredClone(report);
+    const token = partial.tokensInScope['--action-bg'];
+    token.computedValue = '#118a6f';
+    token.terminalValue = '#635bff';
+    const item = reportItems(partial, 'used').find(item => item.name === token.name)!;
+    expect(item.value).toBe('#118a6f');
+    expect(item.raw).toBe('var(--brand-500)');
+    expect(item.token?.terminalValue).toBe('#635bff');
+    expect(item.token?.aliasesTo).toEqual(['--brand-500']);
+    expect(item.token?.winningDeclarationId).toBe(token.winningDeclarationId);
+  });
+
+  it('preserves an empty browser value instead of displaying a stale traced color', () => {
+    const partial = structuredClone(report);
+    partial.tokensInScope['--action-bg'].computedValue = '';
+    const item = reportItems(partial, 'all').find(item => item.name === '--action-bg')!;
+    expect(item.value).toBe('');
+    expect(item.raw).toBe('var(--brand-500)');
+  });
+
+  it('uses the trace only when the browser value is unavailable', () => {
+    const partial = structuredClone(report);
+    partial.tokensInScope['--action-bg'].computedValue = null;
+    expect(reportItems(partial, 'all').find(item => item.name === '--action-bg')?.value).toBe('#635bff');
+  });
+});
+
 describe('scope and reversible editing', () => {
+  it('clears a recovered connection error without hiding style diagnostics', () => {
+    const { store, receive } = setup();
+    receive({ v: 1, id: 'connect-failed', type: 'diag', payload: { diagnostics: [
+      { code: 'CONNECTION_FAILED', severity: 'warn', message: 'Grant site access.' },
+      { code: 'PROBE_MISMATCH', severity: 'warn', message: 'Computed value differs.' },
+    ] } });
+    receive({ v: 1, id: 'reconnected', type: 'resync', payload: { report, edits: [] } });
+    expect(store.getSnapshot().connected).toBe(true);
+    expect(store.getSnapshot().diagnostics.map(d => d.code)).toEqual(['PROBE_MISMATCH']);
+  });
   it('writes every declaring scope for a global token edit, preserving conditions', () => {
     const item = reportItems(report, 'all')[0];
     const token = { ...item.token!, scopes: [

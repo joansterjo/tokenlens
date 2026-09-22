@@ -114,7 +114,7 @@ export function contrastRatio(a: ColorValue | string, b: ColorValue | string): n
 export function palette(tokens: Record<string, ResolvedToken>): { name: string; value: string; color: ColorValue }[] {
   const seen = new Set<string>();
   return Object.values(tokens).flatMap(token => {
-    const value = token.terminalValue ?? token.computedValue ?? '';
+    const value = token.computedValue ?? token.terminalValue ?? '';
     const color = parseColor(value);
     if (!color) return [];
     const key = toHex(color, true);

@@ -2,13 +2,15 @@
 
 The resolver reports the browser's computed values as authoritative. Provenance is CSSOM-derived and reports `probable` at best; unsupported conditions and mismatches downgrade it to `degraded`. It does not claim a universally exact implementation of the browser cascade.
 
+Confidence is conservative across all indexed stylesheets: an unsupported container rule can lower the report's source-tracing confidence even when that rule does not apply to the selected element. It is not a per-token accuracy verdict. Token values and palette colors prefer the browser's computed result, including an empty result, while raw declarations and alias chains remain available separately. Successfully recovered cross-origin sheets produce informational notices; a recovery notice alone does not downgrade confidence to `degraded`.
+
 ## Reproduce
 
 - `pnpm test -- test/unit/resolve` exercises the pure cascade, specificity, alias engine and saved Chromium captures.
 - `pnpm test:browser -- test/browser/capture.test.ts` exercises live CSSOM capture against all 13 fixtures and targeted cascade edge cases.
 - `node test/browser/capture-snapshots.mjs` regenerates all 13 real-Chrome report snapshots, the basic/layer sheet snapshots, a stable value summary, and `test/snapshots/perf.json`. This generator uses installed Google Chrome and a temporary local fixture server; it intercepts fixture09's foreign CSS request without adding CORS headers so CSSOM access really fails.
 
-The current resolver suite contains 29 Node tests and 31 real-browser tests. The randomized alias test generates 150 cyclic graphs per run. Browser checks cover inherited alias evaluation at the declaring ancestor, important layer reversal, shadow-host context ordering, non-inheriting registrations, canonical typed aliases, missing and empty variables, IACVT without runner-up promotion, pending shorthands, preview origins, unreadable sheets, best-effort recovery, and nested/same-count CSSOM mutations.
+The current resolver suite contains 29 Node tests and 32 real-browser tests. The randomized alias test generates 150 cyclic graphs per run. Browser checks cover inherited alias evaluation at the declaring ancestor, important layer reversal, shadow-host context ordering, non-inheriting registrations, canonical typed aliases, missing and empty variables, IACVT without runner-up promotion, pending shorthands, preview origins, unreadable sheets, best-effort recovery, differing recovered declarations with an empty browser result, and nested/same-count CSSOM mutations.
 
 Fixtures 01, 02, 04, 05 and 10 produce no probe mismatches. Fixture03 reports cycles, fixture09 reports unreadable sheets, and fixture11 reports JavaScript-only registration provenance. Selected computed property values are checked against the committed golden summary, and all report references are checked in Node.
 

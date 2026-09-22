@@ -56,4 +56,16 @@ describe('gamut and perceptual comparison', () => {
     const tokens = Object.fromEntries([['--a', '#ff0000'], ['--b', 'rgb(255 0 0)'], ['--c', '12px'], ['--d', 'blue']].map(([name, value]) => [name, { name, terminalValue: value }]));
     expect(palette(tokens as Record<string, ResolvedToken>)).toHaveLength(2);
   });
+  it('uses and deduplicates browser colors when recovered declarations disagree', () => {
+    const tokens = {
+      '--a': { name: '--a', computedValue: 'rgb(0 0 255)', terminalValue: 'red' },
+      '--b': { name: '--b', computedValue: 'blue', terminalValue: 'green' },
+      '--empty': { name: '--empty', computedValue: '', terminalValue: 'red' },
+      '--unknown': { name: '--unknown', computedValue: null, terminalValue: 'yellow' },
+    } as unknown as Record<string, ResolvedToken>;
+    const colors = palette(tokens);
+    expect(colors.map(color => color.name).sort()).toEqual(['--a', '--unknown']);
+    expect(colors.find(color => color.name === '--a')?.value).toBe('rgb(0 0 255)');
+    expect(colors.find(color => color.name === '--unknown')?.value).toBe('yellow');
+  });
 });

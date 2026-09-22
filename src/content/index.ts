@@ -82,7 +82,15 @@ function initialize() {
         const payload = m.payload as { identity?: boolean };
         if (payload.identity) {
           documentId = m.documentId || documentId; frameId = m.frameId ?? 0;
-          if (!connectedOnce) { connectedOnce = true; void restore().then(() => send('resync', { report, edits: engine.getEdits() }, m.id)); }
+          if (!connectedOnce) {
+            connectedOnce = true;
+            void restore().then(() => {
+              // DevTools can mark a frame selection before this loader finishes importing.
+              const marked = document.querySelector('[data-tokenlens-sel]');
+              if (marked) { marked.removeAttribute('data-tokenlens-sel'); select(marked); }
+              send('resync', { report, edits: engine.getEdits() }, m.id);
+            });
+          }
           else send('resync', { report, edits: engine.getEdits() }, m.id);
         } else send('resync', { report, edits: engine.getEdits() }, m.id);
         break;

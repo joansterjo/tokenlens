@@ -1,13 +1,26 @@
 import { PROTOCOL_VERSION, type Envelope } from '../transport/protocol';
+import type { ConnectionResponse, SiteConnection } from '../shared/connection';
 
 const panels = new Map<number, Set<chrome.runtime.Port>>();
 const frames = new Map<number, Map<number, chrome.runtime.Port>>();
 const documents = new Map<number, string>();
+const devtoolsHosts = new Map<number, chrome.runtime.Port>();
+const injections = new Map<number, Promise<void>>();
 void chrome.storage.session.setAccessLevel({ accessLevel: 'TRUSTED_AND_UNTRUSTED_CONTEXTS' });
 function post(port: chrome.runtime.Port, message: Envelope) { try { port.postMessage(message); } catch { /* disconnected */ } }
 function broadcast(tab: number, message: Envelope) { panels.get(tab)?.forEach(p => post(p, message)); }
 
 chrome.runtime.onConnect.addListener(port => {
+  if (port.name.startsWith('devtools-host:')) {
+    const tabId = Number(port.name.slice('devtools-host:'.length));
+    if (!Number.isInteger(tabId)) return;
+    devtoolsHosts.set(tabId, port);
+    port.onDisconnect.addListener(() => {
+      void chrome.runtime.lastError;
+      if (devtoolsHosts.get(tabId) === port) devtoolsHosts.delete(tabId);
+    });
+    return;
+  }
   if (port.name.startsWith('devtools:')) {
     const tab = Number(port.name.slice('devtools:'.length));
     if (!Number.isInteger(tab)) return;
@@ -28,12 +41,20 @@ chrome.runtime.onConnect.addListener(port => {
         }).catch(error => post(port, { ...message, type: 'diag', payload: { message: String(error) } })); return;
       }
       const targets = frames.get(tab);
-      if (message.frameId !== undefined) {
-        const target = targets?.get(message.frameId); if (target) post(target, message);
-      } else targets?.forEach(p => post(p, message));
-      if (!targets?.size && message.type === 'resync') {
-        void inject(tab).then(() => post(port, { v: 1, id: message.id, type: 'diag', payload: { message: 'Connecting to this page…' } })).catch(() => post(port, { v: 1, id: message.id, type: 'diag', payload: { message: 'Cannot inspect this page. Chrome system pages, the Web Store and the PDF viewer are protected. For file URLs, enable file access in extension settings.' } }));
-      }
+      const missingTarget = message.frameId !== undefined ? !targets?.has(message.frameId) : !targets?.has(0);
+      const forward = () => {
+        const current = frames.get(tab);
+        if (message.frameId !== undefined) {
+          const target = current?.get(message.frameId); if (target) post(target, message);
+        } else current?.forEach(p => post(p, message));
+      };
+      if (missingTarget && ['resync', 'pick:start', 'report:request'].includes(message.type)) {
+        // The content loader imports asynchronously. Queue the first action until its handshake.
+        void inject(tab).then(forward).catch(error => post(port, {
+          v: 1, id: message.id, type: 'diag',
+          payload: { code: 'CONNECTION_FAILED', severity: 'warn', message: String(error instanceof Error ? error.message : error) },
+        }));
+      } else forward();
     });
     port.onDisconnect.addListener(() => { void chrome.runtime.lastError; panels.get(tab)?.delete(port); });
     return;
@@ -73,13 +94,49 @@ chrome.runtime.onConnect.addListener(port => {
 });
 
 chrome.tabs.onRemoved.addListener(tabId => {
-  panels.delete(tabId); frames.delete(tabId);
+  panels.delete(tabId); frames.delete(tabId); devtoolsHosts.delete(tabId);
   const documentId = documents.get(tabId); documents.delete(tabId);
   if (documentId) void chrome.storage.session.remove(`tl:${documentId}`);
   void chrome.storage.session.remove(`tl:activeFrame:${tabId}`);
 });
 
-export async function inject(tabId: number) {
+async function inspectorReady(tabId: number): Promise<boolean> {
+  if (!frames.get(tabId)?.has(0)) return false;
+  try {
+    const [result] = await chrome.scripting.executeScript({
+      target: { tabId, frameIds: [0] },
+      func: () => Boolean(globalThis.__TOKENLENS__),
+    });
+    return result?.result === true && result.documentId === documents.get(tabId);
+  } catch { return false; }
+}
+
+export async function getConnection(tabId: number): Promise<SiteConnection> {
+  const tab = await chrome.tabs.get(tabId);
+  const url = tab.url || '';
+  const parsed = url ? new URL(url) : null;
+  const file = parsed?.protocol === 'file:';
+  const web = parsed?.protocol === 'http:' || parsed?.protocol === 'https:';
+  const protectedPage = parsed?.hostname === 'chromewebstore.google.com'
+    || (parsed?.hostname === 'chrome.google.com' && parsed.pathname.startsWith('/webstore'));
+  const fileAccess = file && await chrome.extension.isAllowedFileSchemeAccess();
+  const supported = Boolean((web && !protectedPage) || fileAccess);
+  const hasPermission = supported && (file ? fileAccess : await chrome.permissions.contains({ origins: [`${parsed!.origin}/*`] }));
+  const host = devtoolsHosts.get(tabId);
+  return {
+    tabId, url, hostname: parsed?.hostname || (file ? 'Local file' : 'This page'), supported, hasPermission,
+    connected: hasPermission && await inspectorReady(tabId),
+    devtoolsOpen: Boolean(host),
+    ...(!supported ? { reason: file
+      ? 'Enable “Allow access to file URLs” in TokenLens extension settings, then reopen this popup.'
+      : 'Open a regular website. Chrome pages, the Chrome Web Store and the built-in PDF viewer cannot be inspected.' } : {}),
+  };
+}
+
+async function performInjection(tabId: number) {
+  const status = await getConnection(tabId);
+  if (!status.supported) throw new Error(status.reason);
+  if (!status.hasPermission) throw new Error('Open TokenLens from the Chrome toolbar and choose “Connect this site” to grant access.');
   const manifest = chrome.runtime.getManifest();
   const files = manifest.content_scripts?.[0]?.js || ['content-loader.js'];
   if (!manifest.content_scripts) {
@@ -93,11 +150,34 @@ export async function inject(tabId: number) {
       }
     }
   }
-  await chrome.scripting.executeScript({ target: { tabId, allFrames: true }, files });
+  if (status.connected) return;
+  // A restricted child frame must not prevent inspection of the main page.
+  await chrome.scripting.executeScript({ target: { tabId, frameIds: [0] }, files });
+  await chrome.scripting.executeScript({ target: { tabId, allFrames: true }, files }).catch(() => {});
+  const deadline = Date.now() + 8000;
+  while (Date.now() < deadline) {
+    if (await inspectorReady(tabId)) return;
+    await new Promise(resolve => setTimeout(resolve, 80));
+  }
+  throw new Error('The inspector did not start. Reload this webpage, then try connecting again.');
+}
+
+export function inject(tabId: number): Promise<void> {
+  let operation = injections.get(tabId);
+  if (!operation) {
+    operation = performInjection(tabId).finally(() => injections.delete(tabId));
+    injections.set(tabId, operation);
+  }
+  return operation;
 }
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  if (!['tokenlens:enable', 'tokenlens:inject'].includes(message?.type) || !Number.isInteger(message.tabId)) return;
-  void inject(message.tabId).then(() => sendResponse({ ok: true })).catch(error => sendResponse({ ok: false, error: String(error) }));
+  if (!['tokenlens:enable', 'tokenlens:inject', 'tokenlens:status'].includes(message?.type) || !Number.isInteger(message.tabId)) return;
+  const respond = async (): Promise<ConnectionResponse> => {
+    if (message.type !== 'tokenlens:status') await inject(message.tabId);
+    const status = await getConnection(message.tabId);
+    return { ok: true, status };
+  };
+  void respond().then(sendResponse).catch(error => sendResponse({ ok: false, error: String(error instanceof Error ? error.message : error) }));
   return true;
 });

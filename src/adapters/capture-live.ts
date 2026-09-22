@@ -278,7 +278,7 @@ function buildIndex(root: Root): Index {
             const condition = nested.conditionText ?? prefix.replace(/^@\w+\s*/, '');
             nextConditions = [...conditions, { type, text: condition, matched: 'unknown' }];
             result.diagnostics.push({ code: type === 'container' ? 'CONTAINER_QUERY_UNEVALUATED' : 'SCOPE_UNEVALUATED', severity: 'warn', sheetId: ref.id,
-              message: `${prefix} cannot be evaluated through CSSOM. Conditional declarations are listed as uncertain and are excluded from asserted winners.` });
+              message: `TokenLens does not yet evaluate ${prefix}. These conditional declarations are excluded from the source trace; browser-computed values remain available.` });
           } else if (/^@starting-style\b/.test(prefix)) {
             nextConditions = [...conditions, { type: 'starting-style', text: '@starting-style', matched: false }];
           } else if (/^@(?:-\w+-)?keyframes\b/.test(prefix)) continue;
@@ -527,7 +527,7 @@ export function captureElement(element: Element, options: Options = {}): Element
     tokensInScope[name] = { name, category, categoryConfidence: category === 'other' ? 0.3 : 0.85, categoryAlternates: [],
       declarations: tokenDeclarations.map(declaration => declaration.id), winningDeclarationId: definition?.declaration?.id ?? null,
       declaredOn: definition?.declaredOn ?? null, scopes, registration: definition?.registration ?? registrationMap.get(name) ?? null,
-      rawValue: definition?.value ?? null, computedValue: computedValue || (definition?.value === '' ? '' : null), terminalValue: terminal,
+      rawValue: definition?.value ?? null, computedValue, terminalValue: terminal,
       aliasesTo: allVarNames(definition?.value ?? ''), aliasedBy: [], unusedOnPage: false };
   }
   for (const token of Object.values(tokensInScope)) for (const name of token.aliasesTo) if (tokensInScope[name]) tokensInScope[name].aliasedBy.push(token.name);
@@ -536,6 +536,7 @@ export function captureElement(element: Element, options: Options = {}): Element
   for (const token of Object.values(tokensInScope)) token.usedBy = consumers.get(token.name) ?? { ruleCount: 0, elementCount: 0, sampleElements: [], properties: [], truncated: true };
   const uniqueDiagnostics = [...new Map(diagnostics.map(diagnostic => [`${diagnostic.code}:${diagnostic.token ?? ''}:${diagnostic.property ?? ''}:${diagnostic.sheetId ?? ''}:${diagnostic.message}`, diagnostic])).values()];
   const totalMs = performance.now() - started;
+  // Confidence is conservative across every indexed stylesheet, not a per-token accuracy verdict.
   return { schemaVersion: 1, element: elementMetadata(element, targetStyle, options), properties, groups, declarations, sources, tokensInScope,
     sheets: indices.flatMap(index => index.sheets.map(snapshot => snapshot.sheet)), layerOrder: indices.flatMap(index => index.layers), registrations,
     diagnostics: uniqueDiagnostics, resolverMode: 'cssom', confidence: uniqueDiagnostics.some(diagnostic => diagnostic.severity === 'warn' || diagnostic.severity === 'error') ? 'degraded' : 'probable',

@@ -1,28 +1,28 @@
 {
   "content": {
-    "gzipBytes": 24117,
+    "gzipBytes": 24124,
     "files": [
-      "assets/index.ts-loader-C7a_7mXY.js",
-      "assets/index.ts-Bdyk4KeL.js",
+      "assets/index.ts-loader-BcQG5Jd9.js",
+      "assets/index.ts-D9Aj-Vu0.js",
       "assets/index-Dh4n6Zka.js"
     ]
   },
   "panel": {
-    "gzipBytes": 106723,
+    "gzipBytes": 106878,
     "files": [
       "src/panel/panel.html",
-      "assets/panel-DySsYEp2.js",
+      "assets/panel-D9Y-QtuD.js",
       "assets/modulepreload-polyfill-B5Qt9EMX.js",
-      "assets/styles-Cqgn47W0.js",
+      "assets/styles-BGOdCjbL.js",
       "assets/index-Dh4n6Zka.js",
-      "assets/mock-transport-CNx0XA3B.js",
+      "assets/mock-transport-D9lypESi.js",
       "assets/protocol-CfjwJ40Q.js",
-      "assets/sliders-horizontal-CmH2KSXJ.js",
+      "assets/shield-check-BXTpkFvd.js",
       "assets/styles-BRsCWxvZ.css"
     ]
   },
   "color": {
-    "gzipBytes": 11488,
+    "gzipBytes": 11487,
     "fullPublicApiGzipBytes": 12453,
     "measuredExports": [
       "parseColor",

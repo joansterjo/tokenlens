@@ -41,7 +41,7 @@ export function reportItems(report: ElementTokenReport | null, view: 'used'|'all
   const used = new Set<string>();
   const walk = (chain: ElementTokenReport['properties'][0]['chains'][0]) => { used.add(chain.name); chain.children.forEach(walk); };
   report.properties.forEach(p => { p.tokenRefs.forEach(ref => used.add(ref.name)); p.chains.forEach(walk); });
-  return Object.values(report.tokensInScope).filter(t => view === 'all' || used.has(t.name)).map(token => ({ id: token.name, name: token.name, value: token.terminalValue ?? token.computedValue ?? token.rawValue ?? '', raw: token.rawValue ?? '', category: token.category, token }));
+  return Object.values(report.tokensInScope).filter(t => view === 'all' || used.has(t.name)).map(token => ({ id: token.name, name: token.name, value: token.computedValue ?? token.terminalValue ?? token.rawValue ?? '', raw: token.rawValue ?? '', category: token.category, token }));
 }
 
 export class PanelStore {
@@ -82,11 +82,11 @@ export class PanelStore {
         this.undoStack = []; this.redoStack = []; this.before = null; this.pendingMutations.clear();
         this.update({ report, edits: [], diagnostics: [], undoCount: 0, redoCount: 0, audit: null, auditProgress: null, connected: true, picking: false });
         this.send('resync', {});
-      } else this.update({ report, connected: true, picking: false });
+      } else this.update({ report, connected: true, picking: false, diagnostics: this.state.diagnostics.filter(d => d.code !== 'CONNECTION_FAILED') });
     }
     if (message.type === 'resync') {
       const state = payload as { report?: ElementTokenReport|null; edits?: Edit[] };
-      this.update({ ...(state.report !== undefined ? { report: state.report } : {}), ...(state.edits && !this.before && !this.pendingMutations.size ? { edits: state.edits } : {}), connected: true });
+      this.update({ ...(state.report !== undefined ? { report: state.report } : {}), ...(state.edits && !this.before && !this.pendingMutations.size ? { edits: state.edits } : {}), connected: true, diagnostics: this.state.diagnostics.filter(d => d.code !== 'CONNECTION_FAILED') });
     }
     if (message.type === 'edit:verified') {
       const ref = this.state.report?.element.ref;

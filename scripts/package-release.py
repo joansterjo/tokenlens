@@ -65,13 +65,17 @@ https://github.com/joansterjo/tokenlens
 1. Extract this ZIP into a folder you will keep.
 2. Open chrome://extensions in Chrome and enable Developer mode.
 3. Click Load unpacked and select the folder containing manifest.json.
-4. Reload the website, open DevTools, and choose the Tokens tab.
+4. Reload the website, close and reopen DevTools, and choose the Tokens tab.
 5. Pick an element, edit a token, and copy or download the CSS.
 
 {"For this per-site build, first open TokenLens from the Chrome toolbar, click Connect this site, and grant access." if optional else "This standard build requests access to supported pages at installation."}
 Install only one TokenLens build at a time. This is an unpacked extension
 release, not a Chrome Web Store publication. Keep the extracted folder;
 Chrome loads the extension from it. Requires Chrome 120 or newer.
+
+UPDATING: Extract the same build into your existing extension folder, click
+TokenLens's Reload button in chrome://extensions, reload the webpage, and
+close/reopen DevTools. The popup footer shows the installed version.
 
 Documentation and known limits: https://github.com/joansterjo/tokenlens#readme
 """

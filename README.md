@@ -6,7 +6,7 @@ Built by [Joan Sterjo](https://github.com/joansterjo).
 
 **[Visit the TokenLens product page](https://joansterjo.github.io/tokenlens/)** for an interactive preview, downloads and installation instructions.
 
-**[Download TokenLens v0.1.0](https://github.com/joansterjo/tokenlens/releases/download/v0.1.0/tokenlens-0.1.0.zip)** · [Download with per-site permissions](https://github.com/joansterjo/tokenlens/releases/download/v0.1.0/tokenlens-0.1.0-optional-permissions.zip) · [Release notes](https://github.com/joansterjo/tokenlens/releases/tag/v0.1.0)
+**[Download TokenLens v0.1.1](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1.zip)** · [Download with per-site permissions](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1-optional-permissions.zip) · [Release notes](https://github.com/joansterjo/tokenlens/releases/tag/v0.1.1)
 
 ![TokenLens interface showing a selected component, design tokens, a color editor and component details](docs/ui/panel-wide.png)
 
@@ -23,10 +23,14 @@ No coding or build tools are needed to use the downloads. This is an unpacked Ch
 
 | Download | Site access | Best for |
 | --- | --- | --- |
-| [Standard ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.0/tokenlens-0.1.0.zip) | Requests access to all supported pages at installation | Getting started with minimal setup |
-| [Per-site permissions ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.0/tokenlens-0.1.0-optional-permissions.zip) | Requests access to an individual HTTP/HTTPS site when you connect it | Choosing which sites TokenLens can inspect |
+| [Standard ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1.zip) | Requests access to all supported pages at installation | Getting started with minimal setup |
+| [Per-site permissions ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1-optional-permissions.zip) | Requests access to an individual HTTP/HTTPS site when you connect it | Choosing which sites TokenLens can inspect |
 
 For the per-site build, open the extension from Chrome's toolbar, click **Connect this site**, and grant the requested site access before inspecting. Reload the page if needed. Install only one build at a time.
+
+The popup shows the current site, access permission and inspector readiness. Once connected, close the popup and choose **Tokens** in Chrome DevTools; check the **»** overflow menu. If DevTools was already open when you installed or updated TokenLens, close and reopen DevTools so Chrome registers the Tokens tab.
+
+**Updating an unpacked installation:** download the same build, extract it into your existing extension folder, then click TokenLens's **Reload** button in `chrome://extensions`. Reload the inspected webpage and close/reopen DevTools. The popup footer shows the installed version.
 
 For local HTML files, use the standard build and enable **Allow access to file URLs** in the extension's details. The manifest requires Chrome 120 or newer; see [verification](docs/verification.md) for the browser versions actually tested.
 
@@ -49,6 +53,12 @@ For local HTML files, use the standard build and enable **Allow access to file U
 | Edit history | Supports undo/redo, per-edit revert, and JSON session import/export |
 
 Component details describe the rendered DOM. They do not identify React, Vue or other framework components from their source code.
+
+### What does “Partial source trace” mean?
+
+TokenLens reads live computed values from the browser, but reconstructing the original CSS rule and token alias chain is sometimes incomplete. External stylesheets may need to be fetched again without credentials; that copy can differ from the one loaded by the page. TokenLens also does not yet evaluate container-query and advanced scope conditions when tracing declarations.
+
+The badge summarizes the whole inspected stylesheet scope. A warning can come from a rule that does not affect your selected element; it does not mean every token is wrong or the site failed to connect. You can continue editing and exporting, while treating the affected source and alias attribution as uncertain. The diagnostics explain the specific limitations. Earlier versions called this “degraded provenance.”
 
 ### Choose the reach of an edit
 
@@ -117,7 +127,7 @@ pnpm test:e2e
 
 `pnpm check` runs type checking, lint, Node tests, the production build and bundle-size checks. Browser tests use real browsers. Extension checks need Chromium or Chrome for Testing; on headless Linux, install browser dependencies and run them under Xvfb as shown in [CI](.github/workflows/check.yml). Set `CHROME_PATH` for DOM tests or `CHROMIUM_PATH` for extension tests to select a browser. `pnpm test:perf` runs the performance subset separately.
 
-The initial release verification recorded **80 Node tests, 54 browser tests and 14 extension/platform/performance tests passing**. See the [verification report](docs/verification.md) for evidence, measurements and manual checks still outstanding.
+Version 0.1.1 verification recorded **85 Node tests, 63 browser tests and 16 extension/platform/performance tests passing**. See the [verification report](docs/verification.md) for evidence, measurements and manual checks still outstanding.
 
 ## Known limits
 
