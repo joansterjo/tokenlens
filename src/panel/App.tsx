@@ -98,7 +98,13 @@ export function App({ store, demo = false }: { store: PanelStore; demo?: boolean
   const [target, setTarget] = useState<'overrides'|'flat'|'stylus'|'patch'>('overrides');
   const [toast, setToast] = useState('');
   const [inspectedUrl, setInspectedUrl] = useState('');
-  const [dark, setDark] = useState(() => localStorage.getItem('tl:theme') ? localStorage.getItem('tl:theme') === 'dark' : (typeof chrome !== 'undefined' && chrome.devtools?.panels?.themeName === 'dark') || window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [dark, setDark] = useState(() => {
+    try {
+      const saved = localStorage.getItem('tl:theme');
+      if (saved) return saved === 'dark';
+    } catch (error) { console.warn('TokenLens could not read its theme preference', error); }
+    return (typeof chrome !== 'undefined' && chrome.devtools?.panels?.themeName === 'dark') || window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
   const searchInput = useRef<HTMLInputElement>(null);
   const fileInput = useRef<HTMLInputElement>(null);
   const report = state.report;
@@ -115,7 +121,11 @@ export function App({ store, demo = false }: { store: PanelStore; demo?: boolean
   const generatedAt = useMemo(() => new Date().toISOString(), [state.edits]);
   const css = useMemo(() => emitCSS(state.edits, { target, generatedAt, url: inspectedUrl }), [state.edits, target, generatedAt, inspectedUrl]);
   useEffect(() => { void getInspectedUrl().then(setInspectedUrl); }, [report?.element.ref.documentId]);
-  useEffect(() => { document.documentElement.dataset.theme = dark ? 'dark' : 'light'; localStorage.setItem('tl:theme', dark ? 'dark' : 'light'); }, [dark]);
+  useEffect(() => {
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+    try { localStorage.setItem('tl:theme', dark ? 'dark' : 'light'); }
+    catch (error) { console.warn('TokenLens could not save its theme preference', error); }
+  }, [dark]);
   useEffect(() => { if (!toast) return; const id = setTimeout(() => setToast(''), 3300); return () => clearTimeout(id); }, [toast]);
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {

@@ -53,6 +53,7 @@ export class PanelStore {
   private pendingMutations = new Set<string>();
   private off: () => void;
   private disposed = false;
+  private recoveryRef: ElementTokenReport['element']['ref'] | null = null;
   private screenColorRequest: { resolve: (color: string | undefined) => void; reject: (error: Error) => void } | null = null;
   constructor(private transport: Transport) {
     this.off = transport.on(message => this.receive(message));
@@ -68,16 +69,18 @@ export class PanelStore {
       this.pendingMutations.add(id);
       if (this.pendingMutations.size > 100) this.pendingMutations.delete(this.pendingMutations.values().next().value!);
     }
-    this.transport.send({ v: 1, id, type, payload, ...(this.state.report ? { documentId: this.state.report.element.ref.documentId, frameId: this.state.report.element.ref.frameId } : {}) });
+    const ref = this.state.report?.element.ref ?? this.recoveryRef;
+    this.transport.send({ v: 1, id, type, payload, ...(ref ? { documentId: ref.documentId, frameId: ref.frameId } : {}) });
   }
   private receive(message: Envelope) {
     const payload = message.payload;
     if (message.type === 'edit:verified' || message.type === 'diag') this.pendingMutations.delete(message.id);
     if (message.type === 'report:result') {
       const report = payload as ElementTokenReport;
-      const previous = this.state.report?.element.ref;
+      const previous = this.state.report?.element.ref ?? this.recoveryRef;
       const next = report.element.ref;
       const changedDocument = previous && (previous.documentId !== next.documentId || previous.frameId !== next.frameId);
+      this.recoveryRef = null;
       if (changedDocument) {
         this.undoStack = []; this.redoStack = []; this.before = null; this.pendingMutations.clear();
         this.update({ report, edits: [], diagnostics: [], undoCount: 0, redoCount: 0, audit: null, auditProgress: null, connected: true, picking: false });
@@ -89,7 +92,7 @@ export class PanelStore {
       this.update({ ...(state.report !== undefined ? { report: state.report } : {}), ...(state.edits && !this.before && !this.pendingMutations.size ? { edits: state.edits } : {}), connected: true, diagnostics: this.state.diagnostics.filter(d => d.code !== 'CONNECTION_FAILED') });
     }
     if (message.type === 'edit:verified') {
-      const ref = this.state.report?.element.ref;
+      const ref = this.state.report?.element.ref ?? this.recoveryRef;
       if ((message.documentId && ref?.documentId && message.documentId !== ref.documentId) || (message.frameId !== undefined && ref?.frameId !== undefined && message.frameId !== ref.frameId)) return;
       const data = payload as { edits: Edit[]; diagnostics?: Diagnostic[] };
       const accepted = new Map(data.edits.map(e => [e.id, e]));
@@ -100,7 +103,7 @@ export class PanelStore {
       this.update({ edits: this.state.edits.map(e => e.id === data.editId ? { ...e, blastRadius: data.count } : e) });
     }
     if (message.type === 'pick:stop' || message.type === 'pick:locked') this.update({ picking: false });
-    if (message.type === 'nav:changed') { this.undoStack = []; this.redoStack = []; this.before = null; this.pendingMutations.clear(); this.update({ report: null, edits: [], diagnostics: [], undoCount: 0, redoCount: 0, audit: null }); }
+    if (message.type === 'nav:changed') { this.recoveryRef = null; this.undoStack = []; this.redoStack = []; this.before = null; this.pendingMutations.clear(); this.update({ report: null, edits: [], diagnostics: [], undoCount: 0, redoCount: 0, audit: null }); }
     if (message.type === 'diag') {
       const data = payload as Diagnostic | { diagnostics: Diagnostic[] };
       this.update({ diagnostics: 'diagnostics' in data ? data.diagnostics : [data] });
@@ -110,6 +113,13 @@ export class PanelStore {
     if (message.type === 'audit:result') this.update({ audit: payload as AuditResult, auditProgress: null });
   }
   pick = () => { const picking = !this.state.picking; this.update({ picking }); this.send(picking ? 'pick:start' : 'pick:stop', {}); };
+  recoverEditor = () => {
+    // Forget the view that failed, while retaining edits, history and its document identity.
+    this.recoveryRef = this.state.report?.element.ref ?? this.recoveryRef;
+    if (this.state.picking) this.send('pick:stop', {});
+    if (this.state.auditProgress) this.send('audit:cancel', {});
+    this.update({ report: null, picking: false, audit: null, auditProgress: null });
+  };
   refresh = () => this.send('report:request', {});
   begin = () => { if (!this.before) { this.before = structuredClone(this.state.edits); this.send('edit:apply', { edits: [], transaction: 'start' }); } };
   apply = (newEdits: Edit[]) => {

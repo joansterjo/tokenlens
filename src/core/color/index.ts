@@ -1,5 +1,5 @@
 import {
-  parse, converter, useMode, modeRgb, modeHsl, modeHwb, modeOklab, modeOklch,
+  parse, converter, useMode, getMode, modeRgb, modeHsl, modeHwb, modeOklab, modeOklch,
   modeP3, modeLab, modeLab65, modeLch, modeLrgb, modeXyz50, modeXyz65, modeRec2020,
   modeA98, modeProphoto, formatHex, formatHex8, formatCss, toGamut,
   inGamut, differenceEuclidean, differenceCiede2000, wcagContrast,
@@ -27,12 +27,30 @@ function syntaxOf(text: string): ColorValue['syntax'] {
   return /^[a-z]+$/.test(s) ? 'named' : 'opaque';
 }
 
+/** CSS Color 4: missing components are zero for direct rendering/conversion.
+ * Keep the authored text separately: `none` has distinct interpolation meaning.
+ * https://www.w3.org/TR/css-color-4/#missing
+ */
+function parseRenderable(text: string): Color | undefined {
+  const parsed = parse(text);
+  if (!parsed) return;
+  const channels = parsed as unknown as Record<string, string | number | undefined>;
+  const normalized: Record<string, number> = {};
+  for (const channel of getMode(parsed.mode).channels) {
+    const value = channels[channel] ?? (channel === 'alpha' && !/\/\s*none\s*\)\s*$/i.test(text) ? 1 : 0);
+    if (typeof value !== 'number' || !Number.isFinite(value)) return;
+    normalized[channel] = value;
+  }
+  return { ...parsed, ...normalized };
+}
+
 /** Unsupported context-dependent syntax is never guessed. Supply the browser's readback as computed. */
 export function parseColor(authored: string, computed?: string): ColorValue | null {
-  const parsed = parse(authored);
-  const color = parsed ?? (computed ? parse(computed) : undefined);
+  const parsed = parseRenderable(authored);
+  const color = parsed ?? (computed ? parseRenderable(computed) : undefined);
   if (!color) return null;
   const working = oklch(color);
+  if (![working.l, working.c, working.h ?? 0, working.alpha ?? 1].every(Number.isFinite)) return null;
   const syntax = parsed ? syntaxOf(authored) : 'opaque';
   const text = authored.trim();
   const alphaWasWritten = /\/|rgba\(|hsla\(/i.test(text) || /^#[\da-f]{4}$|^#[\da-f]{8}$/i.test(text);
@@ -78,7 +96,7 @@ export function serializeColor(value: ColorValue, next?: Partial<{ l: number; c:
 }
 
 export function toHex(value: ColorValue | string, includeAlpha = false): string {
-  const color = typeof value === 'string' ? parse(value) : workingColor(value);
+  const color = typeof value === 'string' ? parseRenderable(value) : workingColor(value);
   if (!color) return '#000000';
   return (includeAlpha ? formatHex8 : formatHex)(mapToRgb(color))!;
 }
@@ -106,8 +124,8 @@ export function gamutBoundary(lightness: number, hue: number): number {
 
 /** WCAG 2 luminance contrast. Callers must composite transparent colors onto their real backdrop first. */
 export function contrastRatio(a: ColorValue | string, b: ColorValue | string): number | null {
-  const first = typeof a === 'string' ? parse(a) : workingColor(a);
-  const second = typeof b === 'string' ? parse(b) : workingColor(b);
+  const first = typeof a === 'string' ? parseRenderable(a) : workingColor(a);
+  const second = typeof b === 'string' ? parseRenderable(b) : workingColor(b);
   return !first || !second || (first.alpha ?? 1) < 1 || (second.alpha ?? 1) < 1 ? null : wcagContrast(first, second);
 }
 

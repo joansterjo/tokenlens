@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { parseColor, serializeColor, deltaEOK, deltaE00, gamutMap, gamutBoundary, contrastRatio, palette } from '../../../src/core/color';
+import { parseColor, serializeColor, deltaEOK, deltaE00, gamutMap, gamutBoundary, contrastRatio, palette, toHex } from '../../../src/core/color';
 import type { ResolvedToken } from '../../../src/core/model';
 
 describe('color syntax and authored-value fidelity', () => {
@@ -25,6 +25,32 @@ describe('color syntax and authored-value fidelity', () => {
     expect(parseColor('var(--unknown)')).toBeNull();
     expect(parseColor('currentColor')).toBeNull();
     expect(parseColor('not a color')).toBeNull();
+  });
+  it.each([
+    ['oklch(.5 none none)', 'oklch(.5 0 0)'],
+    ['oklch(none none none)', 'oklch(0 0 0)'],
+    ['rgb(none 10 20)', 'rgb(0 10 20)'],
+    ['hsl(none 50% 50%)', 'hsl(0 50% 50%)'],
+    ['lab(50% none none)', 'lab(50% 0 0)'],
+    ['color(display-p3 1 none 0)', 'color(display-p3 1 0 0)'],
+  ])('renders missing components without losing authored %s', (authored, equivalent) => {
+    const color = parseColor(authored)!;
+    expect(color).not.toBeNull();
+    expect(color.oklch.every(Number.isFinite)).toBe(true);
+    expect(toHex(color, true)).toBe(toHex(equivalent, true));
+    expect(serializeColor(color)).toBe(authored);
+    expect(serializeColor(color, { l: .6 })).not.toMatch(/NaN|undefined/);
+  });
+  it('treats explicit missing alpha as zero while omitted alpha stays opaque', () => {
+    expect(parseColor('oklch(.5 .2 240 / none)')?.alpha).toBe(0);
+    expect(parseColor(' oklch(.5 .2 240 / none) \n')?.alpha).toBe(0);
+    expect(parseColor('oklch(.5 .2 240)')?.alpha).toBe(1);
+    expect(toHex('rgb(255 0 0 / none)', true)).toBe('#ff000000');
+    expect(contrastRatio('rgb(0 0 0 / none)', 'white')).toBeNull();
+  });
+  it('declines non-finite working colors instead of sending them to editor controls', () => {
+    expect(parseColor('oklch(.5 1e999 90)')).toBeNull();
+    expect(parseColor('rgb(1e999 0 0)')).toBeNull();
   });
 });
 

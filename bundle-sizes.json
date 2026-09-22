@@ -1,31 +1,32 @@
 {
   "content": {
-    "gzipBytes": 24240,
+    "gzipBytes": 24243,
     "files": [
-      "assets/index.ts-loader-Y2uVpxMj.js",
-      "assets/index.ts-CZmoiHWk.js",
-      "assets/index-DAl3luir.js",
-      "assets/version-DspXt7v7.js"
+      "assets/index.ts-loader-DcZmAFmA.js",
+      "assets/index.ts-D-Chw5Wz.js",
+      "assets/index-CDqI7_yn.js",
+      "assets/version-Yy3HiIhB.js"
     ]
   },
   "panel": {
-    "gzipBytes": 107022,
+    "gzipBytes": 109358,
     "files": [
       "src/panel/panel.html",
-      "assets/panel-DXmvLvZO.js",
+      "assets/panel-DviQ4ODt.js",
       "assets/modulepreload-polyfill-B5Qt9EMX.js",
       "assets/styles-BGOdCjbL.js",
-      "assets/version-DspXt7v7.js",
-      "assets/index-DAl3luir.js",
-      "assets/mock-transport-D9lypESi.js",
+      "assets/version-Yy3HiIhB.js",
+      "assets/index-CDqI7_yn.js",
+      "assets/mock-transport-CbuvggpE.js",
       "assets/protocol-CfjwJ40Q.js",
       "assets/shield-check-BXTpkFvd.js",
-      "assets/styles-BRsCWxvZ.css"
+      "assets/styles-BRsCWxvZ.css",
+      "assets/panel-B6ujYm5Z.css"
     ]
   },
   "color": {
-    "gzipBytes": 11487,
-    "fullPublicApiGzipBytes": 12453,
+    "gzipBytes": 11610,
+    "fullPublicApiGzipBytes": 12572,
     "measuredExports": [
       "parseColor",
       "serializeColor",

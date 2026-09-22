@@ -1,6 +1,6 @@
 {
   "name": "tokenlens",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Joan Sterjo",
   "description": "A design token studio inside Chrome DevTools.",
   "repository": { "type": "git", "url": "https://github.com/joansterjo/tokenlens.git" },

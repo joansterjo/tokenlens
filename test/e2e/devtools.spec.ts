@@ -97,4 +97,23 @@ test('real DevTools panel edits, exports, and reconnects after service-worker te
   await panel.evaluate(`document.querySelector('[aria-label="Close export"]').click()`);
   await panel.evaluate(`document.querySelector('[aria-label="Revert --brand-500"]').click()`);
   await expect(inspected.locator('#primary')).toHaveCSS('background-color', 'rgb(99, 91, 255)');
+
+  // CSS Color 4 permits missing channels. This used to unmount the entire
+  // Tokens panel when the picker selected a page using such a token.
+  await inspected.addStyleTag({ content: ':root { --brand-500: oklch(.5 none none); }' });
+  const originalMissingColor = await inspected.locator('#primary').evaluate(element => getComputedStyle(element).backgroundColor);
+  expect(originalMissingColor).toContain('oklch');
+  await panel.evaluate(`document.querySelector('.pick-button').click()`);
+  await expect(inspected.locator('tokenlens-root')).toHaveCount(1);
+  await inspected.locator('#primary').click();
+  await expect(inspected.locator('tokenlens-root')).toHaveCount(0);
+  await expect.poll(() => panel.evaluate<string>(`document.querySelector('[aria-label="CSS color"]')?.value ?? ""`)).toContain('none');
+  expect(await panel.evaluate<string>('document.body.innerText')).not.toContain('The editor hit a problem.');
+  await inputColor('#118a6f');
+  await expect(inspected.locator('#primary')).toHaveCSS('background-color', 'rgb(17, 138, 111)');
+  await panel.evaluate(`document.querySelector('.export-open-button').click()`);
+  await expect.poll(() => panel.evaluate<string>(`document.querySelector('[aria-label="Exported CSS"]')?.value ?? ""`)).toContain('#118a6f');
+  await panel.evaluate(`document.querySelector('[aria-label="Close export"]').click()`);
+  await panel.evaluate(`document.querySelector('[aria-label="Revert --brand-500"]').click()`);
+  await expect(inspected.locator('#primary')).toHaveCSS('background-color', originalMissingColor);
 });
