@@ -1,0 +1,36 @@
+{
+  "content": {
+    "gzipBytes": 24117,
+    "files": [
+      "assets/index.ts-loader-C7a_7mXY.js",
+      "assets/index.ts-Bdyk4KeL.js",
+      "assets/index-Dh4n6Zka.js"
+    ]
+  },
+  "panel": {
+    "gzipBytes": 106723,
+    "files": [
+      "src/panel/panel.html",
+      "assets/panel-DySsYEp2.js",
+      "assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "assets/styles-Cqgn47W0.js",
+      "assets/index-Dh4n6Zka.js",
+      "assets/mock-transport-CNx0XA3B.js",
+      "assets/protocol-CfjwJ40Q.js",
+      "assets/sliders-horizontal-CmH2KSXJ.js",
+      "assets/styles-BRsCWxvZ.css"
+    ]
+  },
+  "color": {
+    "gzipBytes": 11488,
+    "fullPublicApiGzipBytes": 12453,
+    "measuredExports": [
+      "parseColor",
+      "serializeColor",
+      "toHex",
+      "gamutBoundary",
+      "palette"
+    ],
+    "note": "Budget covers color functions actually imported by the shipped UI; complete standalone API size is also recorded."
+  }
+}

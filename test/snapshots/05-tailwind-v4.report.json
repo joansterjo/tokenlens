@@ -1,0 +1,5140 @@
+{
+  "schemaVersion": 1,
+  "element": {
+    "ref": {
+      "id": "el-23",
+      "cssPath": "#primary",
+      "tagName": "button",
+      "treeScope": {
+        "id": "document",
+        "kind": "document",
+        "depth": 0
+      },
+      "documentId": "fixture-document",
+      "frameId": 0
+    },
+    "tagName": "button",
+    "id": "primary",
+    "classList": [
+      "button",
+      "target",
+      "bg-indigo-500"
+    ],
+    "hashedClasses": [
+      "bg-indigo-500"
+    ],
+    "attributes": {
+      "id": "primary",
+      "data-testid": "primary-action",
+      "class": "button target bg-indigo-500"
+    },
+    "box": {
+      "content": {
+        "x": 184,
+        "y": 428.078125,
+        "width": 115.65625,
+        "height": 17
+      },
+      "padding": {
+        "x": 164,
+        "y": 416.078125,
+        "width": 155.65625,
+        "height": 41
+      },
+      "border": {
+        "x": 164,
+        "y": 416.078125,
+        "width": 155.65625,
+        "height": 41
+      },
+      "margin": {
+        "x": 164,
+        "y": 416.078125,
+        "width": 155.65625,
+        "height": 41
+      }
+    },
+    "display": "inline-block",
+    "position": "static",
+    "zIndex": "auto",
+    "isStackingContext": false,
+    "layoutRole": null,
+    "containingBlock": {
+      "id": "el-27",
+      "cssPath": "html > body",
+      "tagName": "body",
+      "treeScope": {
+        "id": "document",
+        "kind": "document",
+        "depth": 0
+      },
+      "documentId": "fixture-document",
+      "frameId": 0
+    },
+    "fontStack": [
+      "Inter",
+      "ui-sans-serif",
+      "system-ui",
+      "sans-serif"
+    ],
+    "a11y": {
+      "role": "button",
+      "name": "Create project",
+      "nameSource": "text or title (approximate)",
+      "contrastRatio": null,
+      "approximate": true
+    },
+    "pseudos": [
+      "::before"
+    ],
+    "frameworkHints": []
+  },
+  "properties": [
+    {
+      "property": "color",
+      "computedValue": "rgb(255, 255, 255)",
+      "winningDeclarationId": "sheet-1:9@el-23:color",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "background-color",
+      "computedValue": "rgb(99, 91, 255)",
+      "winningDeclarationId": "sheet-1:9@el-23:background-color",
+      "losers": [
+        "sheet-1:18.0@el-23:background-color"
+      ],
+      "tokenRefs": [
+        {
+          "name": "--action-bg",
+          "raw": "var(--action-bg)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "#635bff"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--action-bg",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--action-bg",
+            "property": "--action-bg",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "var(--brand-500)",
+          "refs": [
+            {
+              "name": "--brand-500",
+              "raw": "var(--brand-500)",
+              "startOffset": 0,
+              "endOffset": 16,
+              "fallbackText": null,
+              "usedFallback": false,
+              "resolvedTo": "#635bff"
+            }
+          ],
+          "registration": null,
+          "computedValue": "#635bff",
+          "terminalValue": "#635bff",
+          "status": "resolved",
+          "children": [
+            {
+              "name": "--brand-500",
+              "depth": 1,
+              "declaration": {
+                "id": "sheet-1:0@el-28:--brand-500",
+                "property": "--brand-500",
+                "valueText": "#635bff",
+                "important": false,
+                "sourceId": "sheet-1:0@el-28",
+                "parsedOk": true,
+                "winner": true
+              },
+              "declaredOn": {
+                "id": "el-28",
+                "cssPath": "html",
+                "tagName": "html",
+                "treeScope": {
+                  "id": "document",
+                  "kind": "document",
+                  "depth": 0
+                },
+                "documentId": "fixture-document",
+                "frameId": 0
+              },
+              "scopeSelector": ":root",
+              "scopeCtx": {
+                "media": null,
+                "supports": null,
+                "container": null,
+                "layerPath": []
+              },
+              "rawValue": "#635bff",
+              "refs": [],
+              "registration": null,
+              "computedValue": "#635bff",
+              "terminalValue": "#635bff",
+              "status": "resolved",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "category": "color",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:background"
+    },
+    {
+      "property": "background-image",
+      "computedValue": "none",
+      "winningDeclarationId": "sheet-1:9@el-23:background-image",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--action-bg",
+          "raw": "var(--action-bg)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "#635bff"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--action-bg",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--action-bg",
+            "property": "--action-bg",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "var(--brand-500)",
+          "refs": [
+            {
+              "name": "--brand-500",
+              "raw": "var(--brand-500)",
+              "startOffset": 0,
+              "endOffset": 16,
+              "fallbackText": null,
+              "usedFallback": false,
+              "resolvedTo": "#635bff"
+            }
+          ],
+          "registration": null,
+          "computedValue": "#635bff",
+          "terminalValue": "#635bff",
+          "status": "resolved",
+          "children": [
+            {
+              "name": "--brand-500",
+              "depth": 1,
+              "declaration": {
+                "id": "sheet-1:0@el-28:--brand-500",
+                "property": "--brand-500",
+                "valueText": "#635bff",
+                "important": false,
+                "sourceId": "sheet-1:0@el-28",
+                "parsedOk": true,
+                "winner": true
+              },
+              "declaredOn": {
+                "id": "el-28",
+                "cssPath": "html",
+                "tagName": "html",
+                "treeScope": {
+                  "id": "document",
+                  "kind": "document",
+                  "depth": 0
+                },
+                "documentId": "fixture-document",
+                "frameId": 0
+              },
+              "scopeSelector": ":root",
+              "scopeCtx": {
+                "media": null,
+                "supports": null,
+                "container": null,
+                "layerPath": []
+              },
+              "rawValue": "#635bff",
+              "refs": [],
+              "registration": null,
+              "computedValue": "#635bff",
+              "terminalValue": "#635bff",
+              "status": "resolved",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "category": "color",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:background"
+    },
+    {
+      "property": "border-top-color",
+      "computedValue": "rgb(255, 255, 255)",
+      "winningDeclarationId": "sheet-1:9@el-23:border-top-color",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-right-color",
+      "computedValue": "rgb(255, 255, 255)",
+      "winningDeclarationId": "sheet-1:9@el-23:border-right-color",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-bottom-color",
+      "computedValue": "rgb(255, 255, 255)",
+      "winningDeclarationId": "sheet-1:9@el-23:border-bottom-color",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-left-color",
+      "computedValue": "rgb(255, 255, 255)",
+      "winningDeclarationId": "sheet-1:9@el-23:border-left-color",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-top-width",
+      "computedValue": "0px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-top-width",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-right-width",
+      "computedValue": "0px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-right-width",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-bottom-width",
+      "computedValue": "0px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-bottom-width",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-left-width",
+      "computedValue": "0px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-left-width",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-top-style",
+      "computedValue": "none",
+      "winningDeclarationId": "sheet-1:9@el-23:border-top-style",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-top-left-radius",
+      "computedValue": "10px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-top-left-radius",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--radius-button",
+          "raw": "var(--radius-button)",
+          "startOffset": 0,
+          "endOffset": 20,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "10px"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--radius-button",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--radius-button",
+            "property": "--radius-button",
+            "valueText": "10px",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "10px",
+          "refs": [],
+          "registration": null,
+          "computedValue": "10px",
+          "terminalValue": "10px",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "radius",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border-radius"
+    },
+    {
+      "property": "border-top-right-radius",
+      "computedValue": "10px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-top-right-radius",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--radius-button",
+          "raw": "var(--radius-button)",
+          "startOffset": 0,
+          "endOffset": 20,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "10px"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--radius-button",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--radius-button",
+            "property": "--radius-button",
+            "valueText": "10px",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "10px",
+          "refs": [],
+          "registration": null,
+          "computedValue": "10px",
+          "terminalValue": "10px",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "radius",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border-radius"
+    },
+    {
+      "property": "border-bottom-right-radius",
+      "computedValue": "10px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-bottom-right-radius",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--radius-button",
+          "raw": "var(--radius-button)",
+          "startOffset": 0,
+          "endOffset": 20,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "10px"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--radius-button",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--radius-button",
+            "property": "--radius-button",
+            "valueText": "10px",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "10px",
+          "refs": [],
+          "registration": null,
+          "computedValue": "10px",
+          "terminalValue": "10px",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "radius",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border-radius"
+    },
+    {
+      "property": "border-bottom-left-radius",
+      "computedValue": "10px",
+      "winningDeclarationId": "sheet-1:9@el-23:border-bottom-left-radius",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--radius-button",
+          "raw": "var(--radius-button)",
+          "startOffset": 0,
+          "endOffset": 20,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "10px"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--radius-button",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--radius-button",
+            "property": "--radius-button",
+            "valueText": "10px",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "10px",
+          "refs": [],
+          "registration": null,
+          "computedValue": "10px",
+          "terminalValue": "10px",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "radius",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border-radius"
+    },
+    {
+      "property": "box-shadow",
+      "computedValue": "rgba(99, 91, 255, 0.25) 0px 4px 12px 0px",
+      "winningDeclarationId": "sheet-1:9@el-23:box-shadow",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--shadow-button",
+          "raw": "var(--shadow-button)",
+          "startOffset": 0,
+          "endOffset": 20,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "0 4px 12px rgb(99 91 255 / 25%)"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--shadow-button",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--shadow-button",
+            "property": "--shadow-button",
+            "valueText": "0 4px 12px rgb(99 91 255 / 25%)",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "0 4px 12px rgb(99 91 255 / 25%)",
+          "refs": [],
+          "registration": null,
+          "computedValue": "0 4px 12px rgb(99 91 255 / 25%)",
+          "terminalValue": "0 4px 12px rgb(99 91 255 / 25%)",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "shadow",
+      "hardcoded": false,
+      "animating": false
+    },
+    {
+      "property": "text-shadow",
+      "computedValue": "none",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "shadow",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "font-family",
+      "computedValue": "Inter, ui-sans-serif, system-ui, sans-serif",
+      "winningDeclarationId": "sheet-1:9@el-23:font-family",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-body",
+          "raw": "var(--font-body)",
+          "startOffset": 9,
+          "endOffset": 25,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "Inter,ui-sans-serif,system-ui,sans-serif"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-body",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--font-body",
+            "property": "--font-body",
+            "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "refs": [],
+          "registration": null,
+          "computedValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "terminalValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:font"
+    },
+    {
+      "property": "font-size",
+      "computedValue": "14px",
+      "winningDeclarationId": "sheet-1:9@el-23:font-size",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-body",
+          "raw": "var(--font-body)",
+          "startOffset": 9,
+          "endOffset": 25,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "Inter,ui-sans-serif,system-ui,sans-serif"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-body",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--font-body",
+            "property": "--font-body",
+            "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "refs": [],
+          "registration": null,
+          "computedValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "terminalValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:font"
+    },
+    {
+      "property": "font-weight",
+      "computedValue": "600",
+      "winningDeclarationId": "sheet-1:9@el-23:font-weight",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-body",
+          "raw": "var(--font-body)",
+          "startOffset": 9,
+          "endOffset": 25,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "Inter,ui-sans-serif,system-ui,sans-serif"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-body",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--font-body",
+            "property": "--font-body",
+            "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "refs": [],
+          "registration": null,
+          "computedValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "terminalValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:font"
+    },
+    {
+      "property": "font-style",
+      "computedValue": "normal",
+      "winningDeclarationId": "sheet-1:9@el-23:font-style",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-body",
+          "raw": "var(--font-body)",
+          "startOffset": 9,
+          "endOffset": 25,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "Inter,ui-sans-serif,system-ui,sans-serif"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-body",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--font-body",
+            "property": "--font-body",
+            "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "refs": [],
+          "registration": null,
+          "computedValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "terminalValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:font"
+    },
+    {
+      "property": "line-height",
+      "computedValue": "normal",
+      "winningDeclarationId": "sheet-1:9@el-23:line-height",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-body",
+          "raw": "var(--font-body)",
+          "startOffset": 9,
+          "endOffset": 25,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "Inter,ui-sans-serif,system-ui,sans-serif"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-body",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--font-body",
+            "property": "--font-body",
+            "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "refs": [],
+          "registration": null,
+          "computedValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "terminalValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:font"
+    },
+    {
+      "property": "letter-spacing",
+      "computedValue": "normal",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "typography",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "text-transform",
+      "computedValue": "none",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "typography",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "text-decoration-color",
+      "computedValue": "rgb(255, 255, 255)",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "text-decoration-line",
+      "computedValue": "none",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "typography",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "padding-top",
+      "computedValue": "12px",
+      "winningDeclarationId": "sheet-1:9@el-23:padding-top",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:padding"
+    },
+    {
+      "property": "padding-right",
+      "computedValue": "20px",
+      "winningDeclarationId": "sheet-1:9@el-23:padding-right",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:padding"
+    },
+    {
+      "property": "padding-bottom",
+      "computedValue": "12px",
+      "winningDeclarationId": "sheet-1:9@el-23:padding-bottom",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:padding"
+    },
+    {
+      "property": "padding-left",
+      "computedValue": "20px",
+      "winningDeclarationId": "sheet-1:9@el-23:padding-left",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:padding"
+    },
+    {
+      "property": "margin-top",
+      "computedValue": "0px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "margin-right",
+      "computedValue": "0px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "margin-bottom",
+      "computedValue": "0px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "margin-left",
+      "computedValue": "0px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "row-gap",
+      "computedValue": "normal",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "column-gap",
+      "computedValue": "normal",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "space",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "width",
+      "computedValue": "155.656px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "size",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "height",
+      "computedValue": "41px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "size",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "min-width",
+      "computedValue": "0px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "size",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "max-width",
+      "computedValue": "none",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "size",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "opacity",
+      "computedValue": "1",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "opacity",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "fill",
+      "computedValue": "rgb(0, 0, 0)",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "stroke",
+      "computedValue": "none",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "outline-color",
+      "computedValue": "rgb(255, 255, 255)",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "color",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "outline-width",
+      "computedValue": "3px",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "filter",
+      "computedValue": "none",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "filter",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "backdrop-filter",
+      "computedValue": "none",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "filter",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "z-index",
+      "computedValue": "auto",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "z-index",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "transition-duration",
+      "computedValue": "0s",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "motion",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "transition-timing-function",
+      "computedValue": "ease",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "motion",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "animation-duration",
+      "computedValue": "0s",
+      "winningDeclarationId": null,
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "motion",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "box-sizing",
+      "computedValue": "border-box",
+      "winningDeclarationId": "sheet-1:1@el-23:box-sizing",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "other",
+      "hardcoded": true,
+      "animating": false
+    },
+    {
+      "property": "border-right-style",
+      "computedValue": "none",
+      "winningDeclarationId": "sheet-1:9@el-23:border-right-style",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-bottom-style",
+      "computedValue": "none",
+      "winningDeclarationId": "sheet-1:9@el-23:border-bottom-style",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "border-left-style",
+      "computedValue": "none",
+      "winningDeclarationId": "sheet-1:9@el-23:border-left-style",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "border",
+      "hardcoded": true,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:border"
+    },
+    {
+      "property": "background-position",
+      "computedValue": "0% 0%",
+      "winningDeclarationId": "sheet-1:9@el-23:background-position",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--action-bg",
+          "raw": "var(--action-bg)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "#635bff"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--action-bg",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--action-bg",
+            "property": "--action-bg",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "var(--brand-500)",
+          "refs": [
+            {
+              "name": "--brand-500",
+              "raw": "var(--brand-500)",
+              "startOffset": 0,
+              "endOffset": 16,
+              "fallbackText": null,
+              "usedFallback": false,
+              "resolvedTo": "#635bff"
+            }
+          ],
+          "registration": null,
+          "computedValue": "#635bff",
+          "terminalValue": "#635bff",
+          "status": "resolved",
+          "children": [
+            {
+              "name": "--brand-500",
+              "depth": 1,
+              "declaration": {
+                "id": "sheet-1:0@el-28:--brand-500",
+                "property": "--brand-500",
+                "valueText": "#635bff",
+                "important": false,
+                "sourceId": "sheet-1:0@el-28",
+                "parsedOk": true,
+                "winner": true
+              },
+              "declaredOn": {
+                "id": "el-28",
+                "cssPath": "html",
+                "tagName": "html",
+                "treeScope": {
+                  "id": "document",
+                  "kind": "document",
+                  "depth": 0
+                },
+                "documentId": "fixture-document",
+                "frameId": 0
+              },
+              "scopeSelector": ":root",
+              "scopeCtx": {
+                "media": null,
+                "supports": null,
+                "container": null,
+                "layerPath": []
+              },
+              "rawValue": "#635bff",
+              "refs": [],
+              "registration": null,
+              "computedValue": "#635bff",
+              "terminalValue": "#635bff",
+              "status": "resolved",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "category": "color",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:background"
+    },
+    {
+      "property": "background-size",
+      "computedValue": "auto",
+      "winningDeclarationId": "sheet-1:9@el-23:background-size",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--action-bg",
+          "raw": "var(--action-bg)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "#635bff"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--action-bg",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--action-bg",
+            "property": "--action-bg",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "var(--brand-500)",
+          "refs": [
+            {
+              "name": "--brand-500",
+              "raw": "var(--brand-500)",
+              "startOffset": 0,
+              "endOffset": 16,
+              "fallbackText": null,
+              "usedFallback": false,
+              "resolvedTo": "#635bff"
+            }
+          ],
+          "registration": null,
+          "computedValue": "#635bff",
+          "terminalValue": "#635bff",
+          "status": "resolved",
+          "children": [
+            {
+              "name": "--brand-500",
+              "depth": 1,
+              "declaration": {
+                "id": "sheet-1:0@el-28:--brand-500",
+                "property": "--brand-500",
+                "valueText": "#635bff",
+                "important": false,
+                "sourceId": "sheet-1:0@el-28",
+                "parsedOk": true,
+                "winner": true
+              },
+              "declaredOn": {
+                "id": "el-28",
+                "cssPath": "html",
+                "tagName": "html",
+                "treeScope": {
+                  "id": "document",
+                  "kind": "document",
+                  "depth": 0
+                },
+                "documentId": "fixture-document",
+                "frameId": 0
+              },
+              "scopeSelector": ":root",
+              "scopeCtx": {
+                "media": null,
+                "supports": null,
+                "container": null,
+                "layerPath": []
+              },
+              "rawValue": "#635bff",
+              "refs": [],
+              "registration": null,
+              "computedValue": "#635bff",
+              "terminalValue": "#635bff",
+              "status": "resolved",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "category": "color",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:background"
+    },
+    {
+      "property": "background-repeat",
+      "computedValue": "repeat",
+      "winningDeclarationId": "sheet-1:9@el-23:background-repeat",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--action-bg",
+          "raw": "var(--action-bg)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "#635bff"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--action-bg",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--action-bg",
+            "property": "--action-bg",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "var(--brand-500)",
+          "refs": [
+            {
+              "name": "--brand-500",
+              "raw": "var(--brand-500)",
+              "startOffset": 0,
+              "endOffset": 16,
+              "fallbackText": null,
+              "usedFallback": false,
+              "resolvedTo": "#635bff"
+            }
+          ],
+          "registration": null,
+          "computedValue": "#635bff",
+          "terminalValue": "#635bff",
+          "status": "resolved",
+          "children": [
+            {
+              "name": "--brand-500",
+              "depth": 1,
+              "declaration": {
+                "id": "sheet-1:0@el-28:--brand-500",
+                "property": "--brand-500",
+                "valueText": "#635bff",
+                "important": false,
+                "sourceId": "sheet-1:0@el-28",
+                "parsedOk": true,
+                "winner": true
+              },
+              "declaredOn": {
+                "id": "el-28",
+                "cssPath": "html",
+                "tagName": "html",
+                "treeScope": {
+                  "id": "document",
+                  "kind": "document",
+                  "depth": 0
+                },
+                "documentId": "fixture-document",
+                "frameId": 0
+              },
+              "scopeSelector": ":root",
+              "scopeCtx": {
+                "media": null,
+                "supports": null,
+                "container": null,
+                "layerPath": []
+              },
+              "rawValue": "#635bff",
+              "refs": [],
+              "registration": null,
+              "computedValue": "#635bff",
+              "terminalValue": "#635bff",
+              "status": "resolved",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "category": "color",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:background"
+    },
+    {
+      "property": "font-stretch",
+      "computedValue": "100%",
+      "winningDeclarationId": "sheet-1:9@el-23:font-stretch",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-body",
+          "raw": "var(--font-body)",
+          "startOffset": 9,
+          "endOffset": 25,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "Inter,ui-sans-serif,system-ui,sans-serif"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-body",
+          "depth": 0,
+          "declaration": {
+            "id": "sheet-1:0@el-28:--font-body",
+            "property": "--font-body",
+            "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+            "important": false,
+            "sourceId": "sheet-1:0@el-28",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "el-28",
+            "cssPath": "html",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "rawValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "refs": [],
+          "registration": null,
+          "computedValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "terminalValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false,
+      "groupId": "sheet-1:9@el-23:font"
+    },
+    {
+      "property": "cursor",
+      "computedValue": "pointer",
+      "winningDeclarationId": "sheet-1:9@el-23:cursor",
+      "losers": [],
+      "tokenRefs": [],
+      "chains": [],
+      "category": "other",
+      "hardcoded": true,
+      "animating": false
+    }
+  ],
+  "groups": [
+    {
+      "id": "sheet-1:9@el-23:border",
+      "shorthand": "border",
+      "authoredText": "0px",
+      "longhands": [
+        "border-top-width",
+        "border-top-style",
+        "border-top-color",
+        "border-right-width",
+        "border-right-style",
+        "border-right-color",
+        "border-bottom-width",
+        "border-bottom-style",
+        "border-bottom-color",
+        "border-left-width",
+        "border-left-style",
+        "border-left-color"
+      ],
+      "sourceId": "sheet-1:9@el-23"
+    },
+    {
+      "id": "sheet-1:9@el-23:padding",
+      "shorthand": "padding",
+      "authoredText": "12px 20px",
+      "longhands": [
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
+      ],
+      "sourceId": "sheet-1:9@el-23"
+    },
+    {
+      "id": "sheet-1:9@el-23:border-radius",
+      "shorthand": "border-radius",
+      "authoredText": "var(--radius-button)",
+      "longhands": [
+        "border-top-left-radius",
+        "border-top-right-radius",
+        "border-bottom-right-radius",
+        "border-bottom-left-radius"
+      ],
+      "sourceId": "sheet-1:9@el-23"
+    },
+    {
+      "id": "sheet-1:9@el-23:background",
+      "shorthand": "background",
+      "authoredText": "var(--action-bg)",
+      "longhands": [
+        "background-color",
+        "background-image",
+        "background-position",
+        "background-size",
+        "background-repeat"
+      ],
+      "sourceId": "sheet-1:9@el-23"
+    },
+    {
+      "id": "sheet-1:9@el-23:font",
+      "shorthand": "font",
+      "authoredText": "600 14px var(--font-body)",
+      "longhands": [
+        "font-family",
+        "font-size",
+        "font-weight",
+        "font-style",
+        "font-stretch",
+        "line-height"
+      ],
+      "sourceId": "sheet-1:9@el-23"
+    }
+  ],
+  "declarations": {
+    "sheet-1:1@el-23:box-sizing": {
+      "id": "sheet-1:1@el-23:box-sizing",
+      "property": "box-sizing",
+      "valueText": "border-box",
+      "important": false,
+      "sourceId": "sheet-1:1@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:border": {
+      "id": "sheet-1:9@el-23:border",
+      "property": "border",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:border-top-width": {
+      "id": "sheet-1:9@el-23:border-top-width",
+      "property": "border-top-width",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-top-style": {
+      "id": "sheet-1:9@el-23:border-top-style",
+      "property": "border-top-style",
+      "valueText": "none",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-top-color": {
+      "id": "sheet-1:9@el-23:border-top-color",
+      "property": "border-top-color",
+      "valueText": "currentcolor",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-right-width": {
+      "id": "sheet-1:9@el-23:border-right-width",
+      "property": "border-right-width",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-right-style": {
+      "id": "sheet-1:9@el-23:border-right-style",
+      "property": "border-right-style",
+      "valueText": "none",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-right-color": {
+      "id": "sheet-1:9@el-23:border-right-color",
+      "property": "border-right-color",
+      "valueText": "currentcolor",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-bottom-width": {
+      "id": "sheet-1:9@el-23:border-bottom-width",
+      "property": "border-bottom-width",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-bottom-style": {
+      "id": "sheet-1:9@el-23:border-bottom-style",
+      "property": "border-bottom-style",
+      "valueText": "none",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-bottom-color": {
+      "id": "sheet-1:9@el-23:border-bottom-color",
+      "property": "border-bottom-color",
+      "valueText": "currentcolor",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-left-width": {
+      "id": "sheet-1:9@el-23:border-left-width",
+      "property": "border-left-width",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-left-style": {
+      "id": "sheet-1:9@el-23:border-left-style",
+      "property": "border-left-style",
+      "valueText": "none",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:border-left-color": {
+      "id": "sheet-1:9@el-23:border-left-color",
+      "property": "border-left-color",
+      "valueText": "currentcolor",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border",
+      "shorthandText": "0px"
+    },
+    "sheet-1:9@el-23:padding": {
+      "id": "sheet-1:9@el-23:padding",
+      "property": "padding",
+      "valueText": "12px 20px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:padding-top": {
+      "id": "sheet-1:9@el-23:padding-top",
+      "property": "padding-top",
+      "valueText": "12px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "12px 20px"
+    },
+    "sheet-1:9@el-23:padding-right": {
+      "id": "sheet-1:9@el-23:padding-right",
+      "property": "padding-right",
+      "valueText": "20px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "12px 20px"
+    },
+    "sheet-1:9@el-23:padding-bottom": {
+      "id": "sheet-1:9@el-23:padding-bottom",
+      "property": "padding-bottom",
+      "valueText": "12px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "12px 20px"
+    },
+    "sheet-1:9@el-23:padding-left": {
+      "id": "sheet-1:9@el-23:padding-left",
+      "property": "padding-left",
+      "valueText": "20px",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "12px 20px"
+    },
+    "sheet-1:9@el-23:border-radius": {
+      "id": "sheet-1:9@el-23:border-radius",
+      "property": "border-radius",
+      "valueText": "var(--radius-button)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:border-top-left-radius": {
+      "id": "sheet-1:9@el-23:border-top-left-radius",
+      "property": "border-top-left-radius",
+      "valueText": "var(--radius-button)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-button)"
+    },
+    "sheet-1:9@el-23:border-top-right-radius": {
+      "id": "sheet-1:9@el-23:border-top-right-radius",
+      "property": "border-top-right-radius",
+      "valueText": "var(--radius-button)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-button)"
+    },
+    "sheet-1:9@el-23:border-bottom-right-radius": {
+      "id": "sheet-1:9@el-23:border-bottom-right-radius",
+      "property": "border-bottom-right-radius",
+      "valueText": "var(--radius-button)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-button)"
+    },
+    "sheet-1:9@el-23:border-bottom-left-radius": {
+      "id": "sheet-1:9@el-23:border-bottom-left-radius",
+      "property": "border-bottom-left-radius",
+      "valueText": "var(--radius-button)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-button)"
+    },
+    "sheet-1:9@el-23:background": {
+      "id": "sheet-1:9@el-23:background",
+      "property": "background",
+      "valueText": "var(--action-bg)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:background-color": {
+      "id": "sheet-1:9@el-23:background-color",
+      "property": "background-color",
+      "valueText": "var(--action-bg)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--action-bg)"
+    },
+    "sheet-1:9@el-23:background-image": {
+      "id": "sheet-1:9@el-23:background-image",
+      "property": "background-image",
+      "valueText": "var(--action-bg)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--action-bg)"
+    },
+    "sheet-1:9@el-23:background-position": {
+      "id": "sheet-1:9@el-23:background-position",
+      "property": "background-position",
+      "valueText": "var(--action-bg)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--action-bg)"
+    },
+    "sheet-1:9@el-23:background-size": {
+      "id": "sheet-1:9@el-23:background-size",
+      "property": "background-size",
+      "valueText": "var(--action-bg)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--action-bg)"
+    },
+    "sheet-1:9@el-23:background-repeat": {
+      "id": "sheet-1:9@el-23:background-repeat",
+      "property": "background-repeat",
+      "valueText": "var(--action-bg)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--action-bg)"
+    },
+    "sheet-1:9@el-23:color": {
+      "id": "sheet-1:9@el-23:color",
+      "property": "color",
+      "valueText": "white",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:font": {
+      "id": "sheet-1:9@el-23:font",
+      "property": "font",
+      "valueText": "600 14px var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:font-family": {
+      "id": "sheet-1:9@el-23:font-family",
+      "property": "font-family",
+      "valueText": "600 14px var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "600 14px var(--font-body)"
+    },
+    "sheet-1:9@el-23:font-size": {
+      "id": "sheet-1:9@el-23:font-size",
+      "property": "font-size",
+      "valueText": "600 14px var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "600 14px var(--font-body)"
+    },
+    "sheet-1:9@el-23:font-weight": {
+      "id": "sheet-1:9@el-23:font-weight",
+      "property": "font-weight",
+      "valueText": "600 14px var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "600 14px var(--font-body)"
+    },
+    "sheet-1:9@el-23:font-style": {
+      "id": "sheet-1:9@el-23:font-style",
+      "property": "font-style",
+      "valueText": "600 14px var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "600 14px var(--font-body)"
+    },
+    "sheet-1:9@el-23:font-stretch": {
+      "id": "sheet-1:9@el-23:font-stretch",
+      "property": "font-stretch",
+      "valueText": "600 14px var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "600 14px var(--font-body)"
+    },
+    "sheet-1:9@el-23:line-height": {
+      "id": "sheet-1:9@el-23:line-height",
+      "property": "line-height",
+      "valueText": "600 14px var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "600 14px var(--font-body)"
+    },
+    "sheet-1:9@el-23:box-shadow": {
+      "id": "sheet-1:9@el-23:box-shadow",
+      "property": "box-shadow",
+      "valueText": "var(--shadow-button)",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:9@el-23:cursor": {
+      "id": "sheet-1:9@el-23:cursor",
+      "property": "cursor",
+      "valueText": "pointer",
+      "important": false,
+      "sourceId": "sheet-1:9@el-23",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:18.0@el-23:background-color": {
+      "id": "sheet-1:18.0@el-23:background-color",
+      "property": "background-color",
+      "valueText": "var(--color-indigo-500)",
+      "important": false,
+      "sourceId": "sheet-1:18.0@el-23",
+      "parsedOk": true,
+      "winner": false,
+      "loserReason": "layer"
+    },
+    "sheet-1:1@el-24:box-sizing": {
+      "id": "sheet-1:1@el-24:box-sizing",
+      "property": "box-sizing",
+      "valueText": "border-box",
+      "important": false,
+      "sourceId": "sheet-1:1@el-24",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:8@el-24:background": {
+      "id": "sheet-1:8@el-24:background",
+      "property": "background",
+      "valueText": "var(--surface)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:8@el-24:background-color": {
+      "id": "sheet-1:8@el-24:background-color",
+      "property": "background-color",
+      "valueText": "var(--surface)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--surface)"
+    },
+    "sheet-1:8@el-24:background-image": {
+      "id": "sheet-1:8@el-24:background-image",
+      "property": "background-image",
+      "valueText": "var(--surface)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--surface)"
+    },
+    "sheet-1:8@el-24:background-position": {
+      "id": "sheet-1:8@el-24:background-position",
+      "property": "background-position",
+      "valueText": "var(--surface)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--surface)"
+    },
+    "sheet-1:8@el-24:background-size": {
+      "id": "sheet-1:8@el-24:background-size",
+      "property": "background-size",
+      "valueText": "var(--surface)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--surface)"
+    },
+    "sheet-1:8@el-24:background-repeat": {
+      "id": "sheet-1:8@el-24:background-repeat",
+      "property": "background-repeat",
+      "valueText": "var(--surface)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--surface)"
+    },
+    "sheet-1:8@el-24:padding": {
+      "id": "sheet-1:8@el-24:padding",
+      "property": "padding",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:8@el-24:padding-top": {
+      "id": "sheet-1:8@el-24:padding-top",
+      "property": "padding-top",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "24px"
+    },
+    "sheet-1:8@el-24:padding-right": {
+      "id": "sheet-1:8@el-24:padding-right",
+      "property": "padding-right",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "24px"
+    },
+    "sheet-1:8@el-24:padding-bottom": {
+      "id": "sheet-1:8@el-24:padding-bottom",
+      "property": "padding-bottom",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "24px"
+    },
+    "sheet-1:8@el-24:padding-left": {
+      "id": "sheet-1:8@el-24:padding-left",
+      "property": "padding-left",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "24px"
+    },
+    "sheet-1:8@el-24:border-radius": {
+      "id": "sheet-1:8@el-24:border-radius",
+      "property": "border-radius",
+      "valueText": "var(--radius-card)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:8@el-24:border-top-left-radius": {
+      "id": "sheet-1:8@el-24:border-top-left-radius",
+      "property": "border-top-left-radius",
+      "valueText": "var(--radius-card)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-card)"
+    },
+    "sheet-1:8@el-24:border-top-right-radius": {
+      "id": "sheet-1:8@el-24:border-top-right-radius",
+      "property": "border-top-right-radius",
+      "valueText": "var(--radius-card)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-card)"
+    },
+    "sheet-1:8@el-24:border-bottom-right-radius": {
+      "id": "sheet-1:8@el-24:border-bottom-right-radius",
+      "property": "border-bottom-right-radius",
+      "valueText": "var(--radius-card)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-card)"
+    },
+    "sheet-1:8@el-24:border-bottom-left-radius": {
+      "id": "sheet-1:8@el-24:border-bottom-left-radius",
+      "property": "border-bottom-left-radius",
+      "valueText": "var(--radius-card)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "border-radius",
+      "shorthandText": "var(--radius-card)"
+    },
+    "sheet-1:8@el-24:box-shadow": {
+      "id": "sheet-1:8@el-24:box-shadow",
+      "property": "box-shadow",
+      "valueText": "var(--shadow-card)",
+      "important": false,
+      "sourceId": "sheet-1:8@el-24",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:1@el-25:box-sizing": {
+      "id": "sheet-1:1@el-25:box-sizing",
+      "property": "box-sizing",
+      "valueText": "border-box",
+      "important": false,
+      "sourceId": "sheet-1:1@el-25",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:7@el-25:display": {
+      "id": "sheet-1:7@el-25:display",
+      "property": "display",
+      "valueText": "grid",
+      "important": false,
+      "sourceId": "sheet-1:7@el-25",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:7@el-25:grid-template-columns": {
+      "id": "sheet-1:7@el-25:grid-template-columns",
+      "property": "grid-template-columns",
+      "valueText": "repeat(3, 1fr)",
+      "important": false,
+      "sourceId": "sheet-1:7@el-25",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:7@el-25:gap": {
+      "id": "sheet-1:7@el-25:gap",
+      "property": "gap",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:7@el-25",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:7@el-25:row-gap": {
+      "id": "sheet-1:7@el-25:row-gap",
+      "property": "row-gap",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:7@el-25",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "gap",
+      "shorthandText": "24px"
+    },
+    "sheet-1:7@el-25:column-gap": {
+      "id": "sheet-1:7@el-25:column-gap",
+      "property": "column-gap",
+      "valueText": "24px",
+      "important": false,
+      "sourceId": "sheet-1:7@el-25",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "gap",
+      "shorthandText": "24px"
+    },
+    "sheet-1:1@el-26:box-sizing": {
+      "id": "sheet-1:1@el-26:box-sizing",
+      "property": "box-sizing",
+      "valueText": "border-box",
+      "important": false,
+      "sourceId": "sheet-1:1@el-26",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:3@el-26:max-width": {
+      "id": "sheet-1:3@el-26:max-width",
+      "property": "max-width",
+      "valueText": "1000px",
+      "important": false,
+      "sourceId": "sheet-1:3@el-26",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:3@el-26:margin": {
+      "id": "sheet-1:3@el-26:margin",
+      "property": "margin",
+      "valueText": "auto",
+      "important": false,
+      "sourceId": "sheet-1:3@el-26",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:3@el-26:margin-top": {
+      "id": "sheet-1:3@el-26:margin-top",
+      "property": "margin-top",
+      "valueText": "auto",
+      "important": false,
+      "sourceId": "sheet-1:3@el-26",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "auto"
+    },
+    "sheet-1:3@el-26:margin-right": {
+      "id": "sheet-1:3@el-26:margin-right",
+      "property": "margin-right",
+      "valueText": "auto",
+      "important": false,
+      "sourceId": "sheet-1:3@el-26",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "auto"
+    },
+    "sheet-1:3@el-26:margin-bottom": {
+      "id": "sheet-1:3@el-26:margin-bottom",
+      "property": "margin-bottom",
+      "valueText": "auto",
+      "important": false,
+      "sourceId": "sheet-1:3@el-26",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "auto"
+    },
+    "sheet-1:3@el-26:margin-left": {
+      "id": "sheet-1:3@el-26:margin-left",
+      "property": "margin-left",
+      "valueText": "auto",
+      "important": false,
+      "sourceId": "sheet-1:3@el-26",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "auto"
+    },
+    "sheet-1:1@el-27:box-sizing": {
+      "id": "sheet-1:1@el-27:box-sizing",
+      "property": "box-sizing",
+      "valueText": "border-box",
+      "important": false,
+      "sourceId": "sheet-1:1@el-27",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:2@el-27:margin": {
+      "id": "sheet-1:2@el-27:margin",
+      "property": "margin",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:2@el-27:margin-top": {
+      "id": "sheet-1:2@el-27:margin-top",
+      "property": "margin-top",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "0px"
+    },
+    "sheet-1:2@el-27:margin-right": {
+      "id": "sheet-1:2@el-27:margin-right",
+      "property": "margin-right",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "0px"
+    },
+    "sheet-1:2@el-27:margin-bottom": {
+      "id": "sheet-1:2@el-27:margin-bottom",
+      "property": "margin-bottom",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "0px"
+    },
+    "sheet-1:2@el-27:margin-left": {
+      "id": "sheet-1:2@el-27:margin-left",
+      "property": "margin-left",
+      "valueText": "0px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "margin",
+      "shorthandText": "0px"
+    },
+    "sheet-1:2@el-27:background": {
+      "id": "sheet-1:2@el-27:background",
+      "property": "background",
+      "valueText": "var(--canvas)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:2@el-27:background-color": {
+      "id": "sheet-1:2@el-27:background-color",
+      "property": "background-color",
+      "valueText": "var(--canvas)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--canvas)"
+    },
+    "sheet-1:2@el-27:background-image": {
+      "id": "sheet-1:2@el-27:background-image",
+      "property": "background-image",
+      "valueText": "var(--canvas)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--canvas)"
+    },
+    "sheet-1:2@el-27:background-position": {
+      "id": "sheet-1:2@el-27:background-position",
+      "property": "background-position",
+      "valueText": "var(--canvas)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--canvas)"
+    },
+    "sheet-1:2@el-27:background-size": {
+      "id": "sheet-1:2@el-27:background-size",
+      "property": "background-size",
+      "valueText": "var(--canvas)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--canvas)"
+    },
+    "sheet-1:2@el-27:background-repeat": {
+      "id": "sheet-1:2@el-27:background-repeat",
+      "property": "background-repeat",
+      "valueText": "var(--canvas)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "background",
+      "shorthandText": "var(--canvas)"
+    },
+    "sheet-1:2@el-27:color": {
+      "id": "sheet-1:2@el-27:color",
+      "property": "color",
+      "valueText": "var(--ink)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:2@el-27:font": {
+      "id": "sheet-1:2@el-27:font",
+      "property": "font",
+      "valueText": "var(--font-size)/1.5 var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:2@el-27:font-family": {
+      "id": "sheet-1:2@el-27:font-family",
+      "property": "font-family",
+      "valueText": "var(--font-size)/1.5 var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+    },
+    "sheet-1:2@el-27:font-size": {
+      "id": "sheet-1:2@el-27:font-size",
+      "property": "font-size",
+      "valueText": "var(--font-size)/1.5 var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+    },
+    "sheet-1:2@el-27:font-weight": {
+      "id": "sheet-1:2@el-27:font-weight",
+      "property": "font-weight",
+      "valueText": "var(--font-size)/1.5 var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+    },
+    "sheet-1:2@el-27:font-style": {
+      "id": "sheet-1:2@el-27:font-style",
+      "property": "font-style",
+      "valueText": "var(--font-size)/1.5 var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+    },
+    "sheet-1:2@el-27:font-stretch": {
+      "id": "sheet-1:2@el-27:font-stretch",
+      "property": "font-stretch",
+      "valueText": "var(--font-size)/1.5 var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+    },
+    "sheet-1:2@el-27:line-height": {
+      "id": "sheet-1:2@el-27:line-height",
+      "property": "line-height",
+      "valueText": "var(--font-size)/1.5 var(--font-body)",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "font",
+      "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+    },
+    "sheet-1:2@el-27:padding": {
+      "id": "sheet-1:2@el-27:padding",
+      "property": "padding",
+      "valueText": "48px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:2@el-27:padding-top": {
+      "id": "sheet-1:2@el-27:padding-top",
+      "property": "padding-top",
+      "valueText": "48px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "48px"
+    },
+    "sheet-1:2@el-27:padding-right": {
+      "id": "sheet-1:2@el-27:padding-right",
+      "property": "padding-right",
+      "valueText": "48px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "48px"
+    },
+    "sheet-1:2@el-27:padding-bottom": {
+      "id": "sheet-1:2@el-27:padding-bottom",
+      "property": "padding-bottom",
+      "valueText": "48px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "48px"
+    },
+    "sheet-1:2@el-27:padding-left": {
+      "id": "sheet-1:2@el-27:padding-left",
+      "property": "padding-left",
+      "valueText": "48px",
+      "important": false,
+      "sourceId": "sheet-1:2@el-27",
+      "parsedOk": true,
+      "winner": true,
+      "shorthandOf": "padding",
+      "shorthandText": "48px"
+    },
+    "sheet-1:0@el-28:--brand-500": {
+      "id": "sheet-1:0@el-28:--brand-500",
+      "property": "--brand-500",
+      "valueText": "#635bff",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--brand-600": {
+      "id": "sheet-1:0@el-28:--brand-600",
+      "property": "--brand-600",
+      "valueText": "#5046e5",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--action-bg": {
+      "id": "sheet-1:0@el-28:--action-bg",
+      "property": "--action-bg",
+      "valueText": "var(--brand-500)",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--ink": {
+      "id": "sheet-1:0@el-28:--ink",
+      "property": "--ink",
+      "valueText": "#18202d",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--muted": {
+      "id": "sheet-1:0@el-28:--muted",
+      "property": "--muted",
+      "valueText": "#667085",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--surface": {
+      "id": "sheet-1:0@el-28:--surface",
+      "property": "--surface",
+      "valueText": "#fff",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--canvas": {
+      "id": "sheet-1:0@el-28:--canvas",
+      "property": "--canvas",
+      "valueText": "#f4f5f8",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--space-2": {
+      "id": "sheet-1:0@el-28:--space-2",
+      "property": "--space-2",
+      "valueText": "8px",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--space-4": {
+      "id": "sheet-1:0@el-28:--space-4",
+      "property": "--space-4",
+      "valueText": "16px",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--radius-card": {
+      "id": "sheet-1:0@el-28:--radius-card",
+      "property": "--radius-card",
+      "valueText": "18px",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--radius-button": {
+      "id": "sheet-1:0@el-28:--radius-button",
+      "property": "--radius-button",
+      "valueText": "10px",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--font-body": {
+      "id": "sheet-1:0@el-28:--font-body",
+      "property": "--font-body",
+      "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--font-size": {
+      "id": "sheet-1:0@el-28:--font-size",
+      "property": "--font-size",
+      "valueText": "16px",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--shadow-card": {
+      "id": "sheet-1:0@el-28:--shadow-card",
+      "property": "--shadow-card",
+      "valueText": "0 8px 32px rgb(23 34 57 / 8%)",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:0@el-28:--shadow-button": {
+      "id": "sheet-1:0@el-28:--shadow-button",
+      "property": "--shadow-button",
+      "valueText": "0 4px 12px rgb(99 91 255 / 25%)",
+      "important": false,
+      "sourceId": "sheet-1:0@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:1@el-28:box-sizing": {
+      "id": "sheet-1:1@el-28:box-sizing",
+      "property": "box-sizing",
+      "valueText": "border-box",
+      "important": false,
+      "sourceId": "sheet-1:1@el-28",
+      "parsedOk": true,
+      "winner": true
+    },
+    "sheet-1:17.0@el-28:--color-indigo-500": {
+      "id": "sheet-1:17.0@el-28:--color-indigo-500",
+      "property": "--color-indigo-500",
+      "valueText": "oklch(58.5% .233 277.1)",
+      "important": false,
+      "sourceId": "sheet-1:17.0@el-28",
+      "parsedOk": true,
+      "winner": true
+    }
+  },
+  "sources": {
+    "sheet-1:1@el-23": {
+      "id": "sheet-1:1@el-23",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "*",
+      "matchedSelector": "*",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "documentOrder": 1,
+      "ruleIndexPath": [
+        1
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:9@el-23": {
+      "id": "sheet-1:9@el-23",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": ".button",
+      "matchedSelector": ".button",
+      "specificity": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      },
+      "documentOrder": 9,
+      "ruleIndexPath": [
+        9
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:18.0@el-23": {
+      "id": "sheet-1:18.0@el-23",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [
+        "utilities"
+      ],
+      "layerOrder": 3,
+      "contextDepth": 0,
+      "selectorText": ".bg-indigo-500",
+      "matchedSelector": ".bg-indigo-500",
+      "specificity": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      },
+      "documentOrder": 16,
+      "ruleIndexPath": [
+        18,
+        0
+      ],
+      "conditions": [
+        {
+          "type": "layer",
+          "text": "utilities",
+          "matched": true
+        }
+      ],
+      "pseudoElement": null
+    },
+    "sheet-1:1@el-24": {
+      "id": "sheet-1:1@el-24",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "*",
+      "matchedSelector": "*",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "documentOrder": 1,
+      "ruleIndexPath": [
+        1
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:8@el-24": {
+      "id": "sheet-1:8@el-24",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": ".card",
+      "matchedSelector": ".card",
+      "specificity": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      },
+      "documentOrder": 8,
+      "ruleIndexPath": [
+        8
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:1@el-25": {
+      "id": "sheet-1:1@el-25",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "*",
+      "matchedSelector": "*",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "documentOrder": 1,
+      "ruleIndexPath": [
+        1
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:7@el-25": {
+      "id": "sheet-1:7@el-25",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": ".grid",
+      "matchedSelector": ".grid",
+      "specificity": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      },
+      "documentOrder": 7,
+      "ruleIndexPath": [
+        7
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:1@el-26": {
+      "id": "sheet-1:1@el-26",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "*",
+      "matchedSelector": "*",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "documentOrder": 1,
+      "ruleIndexPath": [
+        1
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:3@el-26": {
+      "id": "sheet-1:3@el-26",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "main",
+      "matchedSelector": "main",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 1
+      },
+      "documentOrder": 3,
+      "ruleIndexPath": [
+        3
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:1@el-27": {
+      "id": "sheet-1:1@el-27",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "*",
+      "matchedSelector": "*",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "documentOrder": 1,
+      "ruleIndexPath": [
+        1
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:2@el-27": {
+      "id": "sheet-1:2@el-27",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "body",
+      "matchedSelector": "body",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 1
+      },
+      "documentOrder": 2,
+      "ruleIndexPath": [
+        2
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:0@el-28": {
+      "id": "sheet-1:0@el-28",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": ":root",
+      "matchedSelector": ":root",
+      "specificity": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      },
+      "documentOrder": 0,
+      "ruleIndexPath": [
+        0
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:1@el-28": {
+      "id": "sheet-1:1@el-28",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": -1,
+      "contextDepth": 0,
+      "selectorText": "*",
+      "matchedSelector": "*",
+      "specificity": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "documentOrder": 1,
+      "ruleIndexPath": [
+        1
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    },
+    "sheet-1:17.0@el-28": {
+      "id": "sheet-1:17.0@el-28",
+      "sheet": {
+        "id": "sheet-1",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "html > head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 19
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [
+        "theme"
+      ],
+      "layerOrder": 0,
+      "contextDepth": 0,
+      "selectorText": ":root",
+      "matchedSelector": ":root",
+      "specificity": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      },
+      "documentOrder": 15,
+      "ruleIndexPath": [
+        17,
+        0
+      ],
+      "conditions": [
+        {
+          "type": "layer",
+          "text": "theme",
+          "matched": true
+        }
+      ],
+      "pseudoElement": null
+    }
+  },
+  "tokensInScope": {
+    "--brand-500": {
+      "name": "--brand-500",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--brand-500"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--brand-500",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#635bff"
+        },
+        {
+          "selector": "[data-theme=\"dark\"]",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#a49eff"
+        }
+      ],
+      "registration": null,
+      "rawValue": "#635bff",
+      "computedValue": "#635bff",
+      "terminalValue": "#635bff",
+      "aliasesTo": [],
+      "aliasedBy": [
+        "--action-bg"
+      ],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 4,
+        "elementCount": 7,
+        "sampleElements": [
+          {
+            "id": "el-29",
+            "cssPath": "html > body > main > header > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-23",
+            "cssPath": "#primary",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-30",
+            "cssPath": "html > body > main > div > article:nth-of-type(2) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-31",
+            "cssPath": "html > body > main > div > article:nth-of-type(3) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-32",
+            "cssPath": "html > body > main > div > article:nth-of-type(1) > span",
+            "tagName": "span",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "background",
+          "background-color",
+          "background-image",
+          "background-position",
+          "background-size",
+          "background-repeat",
+          "color"
+        ],
+        "truncated": true
+      }
+    },
+    "--muted": {
+      "name": "--muted",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--muted"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--muted",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#667085"
+        },
+        {
+          "selector": "[data-theme=\"dark\"]",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#a8abba"
+        }
+      ],
+      "registration": null,
+      "rawValue": "#667085",
+      "computedValue": "#667085",
+      "terminalValue": "#667085",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 2,
+        "elementCount": 5,
+        "sampleElements": [
+          {
+            "id": "el-33",
+            "cssPath": "html > body > main > header > div > span",
+            "tagName": "span",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-34",
+            "cssPath": "html > body > main > header > div > p",
+            "tagName": "p",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-35",
+            "cssPath": "html > body > main > div > article:nth-of-type(1) > p",
+            "tagName": "p",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-36",
+            "cssPath": "html > body > main > div > article:nth-of-type(2) > p",
+            "tagName": "p",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-37",
+            "cssPath": "html > body > main > div > article:nth-of-type(3) > p",
+            "tagName": "p",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "color"
+        ],
+        "truncated": true
+      }
+    },
+    "--action-bg": {
+      "name": "--action-bg",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--action-bg"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--action-bg",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "var(--brand-500)"
+        }
+      ],
+      "registration": null,
+      "rawValue": "var(--brand-500)",
+      "computedValue": "#635bff",
+      "terminalValue": "#635bff",
+      "aliasesTo": [
+        "--brand-500"
+      ],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 4,
+        "sampleElements": [
+          {
+            "id": "el-29",
+            "cssPath": "html > body > main > header > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-23",
+            "cssPath": "#primary",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-30",
+            "cssPath": "html > body > main > div > article:nth-of-type(2) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-31",
+            "cssPath": "html > body > main > div > article:nth-of-type(3) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "background",
+          "background-color",
+          "background-image",
+          "background-position",
+          "background-size",
+          "background-repeat"
+        ],
+        "truncated": true
+      }
+    },
+    "--brand-600": {
+      "name": "--brand-600",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--brand-600"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--brand-600",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#5046e5"
+        }
+      ],
+      "registration": null,
+      "rawValue": "#5046e5",
+      "computedValue": "#5046e5",
+      "terminalValue": "#5046e5",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 0,
+        "elementCount": 0,
+        "sampleElements": [],
+        "properties": [],
+        "truncated": true
+      }
+    },
+    "--color-indigo-500": {
+      "name": "--color-indigo-500",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:17.0@el-28:--color-indigo-500"
+      ],
+      "winningDeclarationId": "sheet-1:17.0@el-28:--color-indigo-500",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": [
+              "theme"
+            ]
+          },
+          "value": "oklch(58.5% .233 277.1)"
+        }
+      ],
+      "registration": null,
+      "rawValue": "oklch(58.5% .233 277.1)",
+      "computedValue": "oklch(58.5% .233 277.1)",
+      "terminalValue": "oklch(58.5% .233 277.1)",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 1,
+        "sampleElements": [
+          {
+            "id": "el-23",
+            "cssPath": "#primary",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "background-color"
+        ],
+        "truncated": true
+      }
+    },
+    "--radius-card": {
+      "name": "--radius-card",
+      "category": "radius",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--radius-card"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--radius-card",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "18px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "18px",
+      "computedValue": "18px",
+      "terminalValue": "18px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "el-24",
+            "cssPath": "html > body > main > div > article:nth-of-type(1)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-38",
+            "cssPath": "html > body > main > div > article:nth-of-type(2)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-39",
+            "cssPath": "html > body > main > div > article:nth-of-type(3)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "border-radius",
+          "border-top-left-radius",
+          "border-top-right-radius",
+          "border-bottom-right-radius",
+          "border-bottom-left-radius"
+        ],
+        "truncated": true
+      }
+    },
+    "--space-2": {
+      "name": "--space-2",
+      "category": "space",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--space-2"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--space-2",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "8px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "8px",
+      "computedValue": "8px",
+      "terminalValue": "8px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 0,
+        "elementCount": 0,
+        "sampleElements": [],
+        "properties": [],
+        "truncated": true
+      }
+    },
+    "--space-4": {
+      "name": "--space-4",
+      "category": "space",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--space-4"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--space-4",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "16px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "16px",
+      "computedValue": "16px",
+      "terminalValue": "16px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 0,
+        "elementCount": 0,
+        "sampleElements": [],
+        "properties": [],
+        "truncated": true
+      }
+    },
+    "--tw-ring-color": {
+      "name": "--tw-ring-color",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [],
+      "winningDeclarationId": null,
+      "declaredOn": {
+        "id": "el-23",
+        "cssPath": "#primary",
+        "tagName": "button",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [],
+      "registration": {
+        "name": "--tw-ring-color",
+        "syntax": "<color>",
+        "inherits": false,
+        "initialValue": "transparent",
+        "via": "at-property",
+        "sourceId": "sheet-1:16"
+      },
+      "rawValue": "transparent",
+      "computedValue": "rgba(0, 0, 0, 0)",
+      "terminalValue": "rgba(0, 0, 0, 0)",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 0,
+        "elementCount": 0,
+        "sampleElements": [],
+        "properties": [],
+        "truncated": true
+      }
+    },
+    "--shadow-button": {
+      "name": "--shadow-button",
+      "category": "shadow",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--shadow-button"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--shadow-button",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "0 4px 12px rgb(99 91 255 / 25%)"
+        }
+      ],
+      "registration": null,
+      "rawValue": "0 4px 12px rgb(99 91 255 / 25%)",
+      "computedValue": "0 4px 12px rgb(99 91 255 / 25%)",
+      "terminalValue": "0 4px 12px rgb(99 91 255 / 25%)",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 4,
+        "sampleElements": [
+          {
+            "id": "el-29",
+            "cssPath": "html > body > main > header > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-23",
+            "cssPath": "#primary",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-30",
+            "cssPath": "html > body > main > div > article:nth-of-type(2) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-31",
+            "cssPath": "html > body > main > div > article:nth-of-type(3) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "box-shadow"
+        ],
+        "truncated": true
+      }
+    },
+    "--font-body": {
+      "name": "--font-body",
+      "category": "typography",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--font-body"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--font-body",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "Inter,ui-sans-serif,system-ui,sans-serif"
+        }
+      ],
+      "registration": null,
+      "rawValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+      "computedValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+      "terminalValue": "Inter,ui-sans-serif,system-ui,sans-serif",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 2,
+        "elementCount": 5,
+        "sampleElements": [
+          {
+            "id": "el-27",
+            "cssPath": "html > body",
+            "tagName": "body",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-29",
+            "cssPath": "html > body > main > header > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-23",
+            "cssPath": "#primary",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-30",
+            "cssPath": "html > body > main > div > article:nth-of-type(2) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-31",
+            "cssPath": "html > body > main > div > article:nth-of-type(3) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "font",
+          "font-family",
+          "font-size",
+          "font-weight",
+          "font-style",
+          "font-stretch",
+          "line-height"
+        ],
+        "truncated": true
+      }
+    },
+    "--surface": {
+      "name": "--surface",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--surface"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--surface",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#fff"
+        },
+        {
+          "selector": "[data-theme=\"dark\"]",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#22242d"
+        }
+      ],
+      "registration": null,
+      "rawValue": "#fff",
+      "computedValue": "#fff",
+      "terminalValue": "#fff",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "el-24",
+            "cssPath": "html > body > main > div > article:nth-of-type(1)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-38",
+            "cssPath": "html > body > main > div > article:nth-of-type(2)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-39",
+            "cssPath": "html > body > main > div > article:nth-of-type(3)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "background",
+          "background-color",
+          "background-image",
+          "background-position",
+          "background-size",
+          "background-repeat"
+        ],
+        "truncated": true
+      }
+    },
+    "--font-size": {
+      "name": "--font-size",
+      "category": "typography",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--font-size"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--font-size",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "16px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "16px",
+      "computedValue": "16px",
+      "terminalValue": "16px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 1,
+        "sampleElements": [
+          {
+            "id": "el-27",
+            "cssPath": "html > body",
+            "tagName": "body",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "font",
+          "font-family",
+          "font-size",
+          "font-weight",
+          "font-style",
+          "font-stretch",
+          "line-height"
+        ],
+        "truncated": true
+      }
+    },
+    "--radius-button": {
+      "name": "--radius-button",
+      "category": "radius",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--radius-button"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--radius-button",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "10px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "10px",
+      "computedValue": "10px",
+      "terminalValue": "10px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 4,
+        "sampleElements": [
+          {
+            "id": "el-29",
+            "cssPath": "html > body > main > header > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-23",
+            "cssPath": "#primary",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-30",
+            "cssPath": "html > body > main > div > article:nth-of-type(2) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-31",
+            "cssPath": "html > body > main > div > article:nth-of-type(3) > button",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "border-radius",
+          "border-top-left-radius",
+          "border-top-right-radius",
+          "border-bottom-right-radius",
+          "border-bottom-left-radius"
+        ],
+        "truncated": true
+      }
+    },
+    "--shadow-card": {
+      "name": "--shadow-card",
+      "category": "shadow",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--shadow-card"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--shadow-card",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "0 8px 32px rgb(23 34 57 / 8%)"
+        }
+      ],
+      "registration": null,
+      "rawValue": "0 8px 32px rgb(23 34 57 / 8%)",
+      "computedValue": "0 8px 32px rgb(23 34 57 / 8%)",
+      "terminalValue": "0 8px 32px rgb(23 34 57 / 8%)",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "el-24",
+            "cssPath": "html > body > main > div > article:nth-of-type(1)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-38",
+            "cssPath": "html > body > main > div > article:nth-of-type(2)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          },
+          {
+            "id": "el-39",
+            "cssPath": "html > body > main > div > article:nth-of-type(3)",
+            "tagName": "article",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "box-shadow"
+        ],
+        "truncated": true
+      }
+    },
+    "--ink": {
+      "name": "--ink",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--ink"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--ink",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#18202d"
+        },
+        {
+          "selector": "[data-theme=\"dark\"]",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#f5f5fa"
+        }
+      ],
+      "registration": null,
+      "rawValue": "#18202d",
+      "computedValue": "#18202d",
+      "terminalValue": "#18202d",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 1,
+        "sampleElements": [
+          {
+            "id": "el-27",
+            "cssPath": "html > body",
+            "tagName": "body",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "color"
+        ],
+        "truncated": true
+      }
+    },
+    "--canvas": {
+      "name": "--canvas",
+      "category": "color",
+      "categoryConfidence": 0.85,
+      "categoryAlternates": [],
+      "declarations": [
+        "sheet-1:0@el-28:--canvas"
+      ],
+      "winningDeclarationId": "sheet-1:0@el-28:--canvas",
+      "declaredOn": {
+        "id": "el-28",
+        "cssPath": "html",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "documentId": "fixture-document",
+        "frameId": 0
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#f4f5f8"
+        },
+        {
+          "selector": "[data-theme=\"dark\"]",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "container": null,
+            "layerPath": []
+          },
+          "value": "#16171c"
+        }
+      ],
+      "registration": null,
+      "rawValue": "#f4f5f8",
+      "computedValue": "#f4f5f8",
+      "terminalValue": "#f4f5f8",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "unusedOnPage": false,
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 1,
+        "sampleElements": [
+          {
+            "id": "el-27",
+            "cssPath": "html > body",
+            "tagName": "body",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "fixture-document",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "background",
+          "background-color",
+          "background-image",
+          "background-position",
+          "background-size",
+          "background-repeat"
+        ],
+        "truncated": true
+      }
+    }
+  },
+  "sheets": [
+    {
+      "id": "sheet-1",
+      "href": null,
+      "kind": "style",
+      "ownerNodePath": "html > head > style",
+      "treeScope": {
+        "id": "document",
+        "kind": "document",
+        "depth": 0
+      },
+      "sheetIndex": 0,
+      "media": null,
+      "disabled": false,
+      "readable": true,
+      "reparsed": false,
+      "importChain": [],
+      "ruleCount": 19
+    }
+  ],
+  "layerOrder": [
+    {
+      "name": "theme",
+      "order": 0
+    },
+    {
+      "name": "base",
+      "order": 1
+    },
+    {
+      "name": "components",
+      "order": 2
+    },
+    {
+      "name": "utilities",
+      "order": 3
+    }
+  ],
+  "registrations": [
+    {
+      "name": "--tw-ring-color",
+      "syntax": "<color>",
+      "inherits": false,
+      "initialValue": "transparent",
+      "via": "at-property",
+      "sourceId": "sheet-1:16"
+    }
+  ],
+  "diagnostics": [],
+  "resolverMode": "cssom",
+  "confidence": "probable",
+  "timings": {
+    "totalMs": 0,
+    "indexMs": 0,
+    "matchMs": 0,
+    "resolveMs": 0,
+    "sheetFetchMs": 0
+  }
+}

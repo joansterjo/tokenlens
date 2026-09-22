@@ -1,0 +1,37 @@
+{
+  "measuredAt": "2026-09-22T09:12:35.455Z",
+  "playwright": "1.62.1",
+  "browser": "153.0.8010.52",
+  "mode": "headless",
+  "S3": {
+    "closedRoot": true,
+    "open": true,
+    "showError": null,
+    "repeatError": null
+  },
+  "S4": {
+    "token": "oklch(0.6 0.2 240)",
+    "color": "oklch(0.6 0.2 240)",
+    "p3": "color(display-p3 1 0.2 0.3)"
+  },
+  "S5": {
+    "computed": "12px",
+    "authored": "var(--y)"
+  },
+  "S6": {
+    "token": "oklch(0.7 0.1 20)",
+    "color": "oklch(0.7 0.1 20)"
+  },
+  "registration": {
+    "childInitial": "8px",
+    "coerced": "20px",
+    "invalid": "8px"
+  },
+  "colorMix": "oklch(0.539974 0.285457 326.643)",
+  "S12": {
+    "context": "CDP-created isolated world (not extension world)",
+    "documentColor": "rgb(1, 2, 3)",
+    "shadowColor": "rgb(4, 5, 6)",
+    "exception": null
+  }
+}

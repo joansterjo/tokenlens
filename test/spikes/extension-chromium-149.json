@@ -1,0 +1,58 @@
+{
+  "measuredAt": "2026-09-22T09:13:56.573Z",
+  "playwright": "1.62.1",
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36",
+  "results": [
+    {
+      "kind": "content",
+      "url": "about:srcdoc",
+      "isTop": false,
+      "documentColor": "rgb(1, 2, 3)",
+      "shadowColor": "rgb(4, 5, 6)",
+      "frameId": 4,
+      "documentId": "83355EA834E8AFDFE0111F7503F11AF2"
+    },
+    {
+      "kind": "content",
+      "url": "http://127.0.0.1:58518/child",
+      "isTop": false,
+      "documentColor": "rgb(1, 2, 3)",
+      "shadowColor": "rgb(4, 5, 6)",
+      "frameId": 3,
+      "documentId": "01D8A4E2A9D3C48178A72EDD33A457FB"
+    },
+    {
+      "kind": "content",
+      "url": "http://127.0.0.1:58518/",
+      "isTop": true,
+      "documentColor": "rgb(1, 2, 3)",
+      "shadowColor": "rgb(4, 5, 6)",
+      "frameId": 0,
+      "documentId": "58ECAF481B6B29FEBA6A5C971C6E2A78"
+    },
+    {
+      "kind": "devtools",
+      "main": {
+        "value": {
+          "type": "object",
+          "id": "target",
+          "content": "undefined"
+        }
+      },
+      "isolated": {
+        "value": {
+          "type": "object",
+          "id": "target",
+          "content": "boolean"
+        }
+      },
+      "childSelection": {
+        "value": {
+          "location": "http://127.0.0.1:58518/",
+          "selectedId": "inside",
+          "selectedDocument": "http://127.0.0.1:58518/child"
+        }
+      }
+    }
+  ]
+}

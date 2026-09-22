@@ -1,0 +1,1041 @@
+{
+  "schemaVersion": 1,
+  "element": {
+    "ref": {
+      "id": "demo-button",
+      "cssPath": "[data-testid=\"primary-action\"]",
+      "tagName": "button",
+      "treeScope": {
+        "id": "document",
+        "kind": "document",
+        "depth": 0
+      },
+      "documentId": "demo",
+      "frameId": 0
+    },
+    "tagName": "button",
+    "id": "primary",
+    "classList": [
+      "button",
+      "target"
+    ],
+    "hashedClasses": [],
+    "attributes": {
+      "data-testid": "primary-action"
+    },
+    "box": {
+      "content": {
+        "x": 0,
+        "y": 0,
+        "width": 154,
+        "height": 42
+      },
+      "padding": {
+        "x": 0,
+        "y": 0,
+        "width": 154,
+        "height": 42
+      },
+      "border": {
+        "x": 0,
+        "y": 0,
+        "width": 154,
+        "height": 42
+      },
+      "margin": {
+        "x": 0,
+        "y": 0,
+        "width": 154,
+        "height": 42
+      }
+    },
+    "display": "inline-block",
+    "position": "static",
+    "zIndex": "auto",
+    "isStackingContext": false,
+    "layoutRole": "Child of article.card",
+    "containingBlock": null,
+    "fontStack": [
+      "Inter",
+      "system-ui",
+      "sans-serif"
+    ],
+    "a11y": {
+      "role": "button",
+      "name": "Create project",
+      "nameSource": "text content",
+      "contrastRatio": 4.7,
+      "approximate": true
+    },
+    "pseudos": [
+      "::before"
+    ],
+    "frameworkHints": []
+  },
+  "properties": [
+    {
+      "property": "background-color",
+      "computedValue": "#635bff",
+      "winningDeclarationId": "--action-bg",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--action-bg",
+          "raw": "var(--action-bg)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "#635bff"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--action-bg",
+          "depth": 0,
+          "declaration": {
+            "id": "--action-bg",
+            "property": "--action-bg",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "demo-source",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "root",
+            "cssPath": ":root",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            }
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "rawValue": "var(--brand-500)",
+          "refs": [],
+          "registration": null,
+          "computedValue": "#635bff",
+          "terminalValue": "#635bff",
+          "status": "resolved",
+          "children": [
+            {
+              "name": "--brand-500",
+              "depth": 0,
+              "declaration": {
+                "id": "--brand-500",
+                "property": "--brand-500",
+                "valueText": "#635bff",
+                "important": false,
+                "sourceId": "demo-source",
+                "parsedOk": true,
+                "winner": true
+              },
+              "declaredOn": {
+                "id": "root",
+                "cssPath": ":root",
+                "tagName": "html",
+                "treeScope": {
+                  "id": "document",
+                  "kind": "document",
+                  "depth": 0
+                }
+              },
+              "scopeSelector": ":root",
+              "scopeCtx": {
+                "media": null,
+                "supports": null,
+                "layerPath": [],
+                "container": null
+              },
+              "rawValue": "#635bff",
+              "refs": [],
+              "registration": null,
+              "computedValue": "#635bff",
+              "terminalValue": "#635bff",
+              "status": "resolved",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "category": "color",
+      "hardcoded": false,
+      "animating": false
+    },
+    {
+      "property": "font-family",
+      "computedValue": "Inter, system-ui, sans-serif",
+      "winningDeclarationId": "--font-body",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-body",
+          "raw": "var(--font-body)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "Inter, system-ui, sans-serif"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-body",
+          "depth": 0,
+          "declaration": {
+            "id": "--font-body",
+            "property": "--font-body",
+            "valueText": "Inter, system-ui, sans-serif",
+            "important": false,
+            "sourceId": "demo-source",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "root",
+            "cssPath": ":root",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            }
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "rawValue": "Inter, system-ui, sans-serif",
+          "refs": [],
+          "registration": null,
+          "computedValue": "Inter, system-ui, sans-serif",
+          "terminalValue": "Inter, system-ui, sans-serif",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false
+    },
+    {
+      "property": "font-size",
+      "computedValue": "16px",
+      "winningDeclarationId": "--font-size",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--font-size",
+          "raw": "var(--font-size)",
+          "startOffset": 0,
+          "endOffset": 16,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "16px"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--font-size",
+          "depth": 0,
+          "declaration": {
+            "id": "--font-size",
+            "property": "--font-size",
+            "valueText": "16px",
+            "important": false,
+            "sourceId": "demo-source",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "root",
+            "cssPath": ":root",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            }
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "rawValue": "16px",
+          "refs": [],
+          "registration": null,
+          "computedValue": "16px",
+          "terminalValue": "16px",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "typography",
+      "hardcoded": false,
+      "animating": false
+    },
+    {
+      "property": "padding-top",
+      "computedValue": "16px",
+      "winningDeclarationId": "--space-4",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--space-4",
+          "raw": "var(--space-4)",
+          "startOffset": 0,
+          "endOffset": 14,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "16px"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--space-4",
+          "depth": 0,
+          "declaration": {
+            "id": "--space-4",
+            "property": "--space-4",
+            "valueText": "16px",
+            "important": false,
+            "sourceId": "demo-source",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "root",
+            "cssPath": ":root",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            }
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "rawValue": "16px",
+          "refs": [],
+          "registration": null,
+          "computedValue": "16px",
+          "terminalValue": "16px",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "space",
+      "hardcoded": false,
+      "animating": false
+    },
+    {
+      "property": "border-top-left-radius",
+      "computedValue": "10px",
+      "winningDeclarationId": "--radius-button",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--radius-button",
+          "raw": "var(--radius-button)",
+          "startOffset": 0,
+          "endOffset": 20,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "10px"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--radius-button",
+          "depth": 0,
+          "declaration": {
+            "id": "--radius-button",
+            "property": "--radius-button",
+            "valueText": "10px",
+            "important": false,
+            "sourceId": "demo-source",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "root",
+            "cssPath": ":root",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            }
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "rawValue": "10px",
+          "refs": [],
+          "registration": null,
+          "computedValue": "10px",
+          "terminalValue": "10px",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "radius",
+      "hardcoded": false,
+      "animating": false
+    },
+    {
+      "property": "box-shadow",
+      "computedValue": "0 4px 12px rgb(99 91 255 / 25%)",
+      "winningDeclarationId": "--shadow-button",
+      "losers": [],
+      "tokenRefs": [
+        {
+          "name": "--shadow-button",
+          "raw": "var(--shadow-button)",
+          "startOffset": 0,
+          "endOffset": 20,
+          "fallbackText": null,
+          "usedFallback": false,
+          "resolvedTo": "0 4px 12px rgb(99 91 255 / 25%)"
+        }
+      ],
+      "chains": [
+        {
+          "name": "--shadow-button",
+          "depth": 0,
+          "declaration": {
+            "id": "--shadow-button",
+            "property": "--shadow-button",
+            "valueText": "0 4px 12px rgb(99 91 255 / 25%)",
+            "important": false,
+            "sourceId": "demo-source",
+            "parsedOk": true,
+            "winner": true
+          },
+          "declaredOn": {
+            "id": "root",
+            "cssPath": ":root",
+            "tagName": "html",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            }
+          },
+          "scopeSelector": ":root",
+          "scopeCtx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "rawValue": "0 4px 12px rgb(99 91 255 / 25%)",
+          "refs": [],
+          "registration": null,
+          "computedValue": "0 4px 12px rgb(99 91 255 / 25%)",
+          "terminalValue": "0 4px 12px rgb(99 91 255 / 25%)",
+          "status": "resolved",
+          "children": []
+        }
+      ],
+      "category": "shadow",
+      "hardcoded": false,
+      "animating": false
+    }
+  ],
+  "groups": [],
+  "declarations": {
+    "--brand-500": {
+      "id": "--brand-500",
+      "property": "--brand-500",
+      "valueText": "#635bff",
+      "important": false,
+      "sourceId": "demo-source",
+      "parsedOk": true,
+      "winner": true
+    },
+    "--action-bg": {
+      "id": "--action-bg",
+      "property": "--action-bg",
+      "valueText": "var(--brand-500)",
+      "important": false,
+      "sourceId": "demo-source",
+      "parsedOk": true,
+      "winner": true
+    },
+    "--font-body": {
+      "id": "--font-body",
+      "property": "--font-body",
+      "valueText": "Inter, system-ui, sans-serif",
+      "important": false,
+      "sourceId": "demo-source",
+      "parsedOk": true,
+      "winner": true
+    },
+    "--font-size": {
+      "id": "--font-size",
+      "property": "--font-size",
+      "valueText": "16px",
+      "important": false,
+      "sourceId": "demo-source",
+      "parsedOk": true,
+      "winner": true
+    },
+    "--space-4": {
+      "id": "--space-4",
+      "property": "--space-4",
+      "valueText": "16px",
+      "important": false,
+      "sourceId": "demo-source",
+      "parsedOk": true,
+      "winner": true
+    },
+    "--radius-button": {
+      "id": "--radius-button",
+      "property": "--radius-button",
+      "valueText": "10px",
+      "important": false,
+      "sourceId": "demo-source",
+      "parsedOk": true,
+      "winner": true
+    },
+    "--shadow-button": {
+      "id": "--shadow-button",
+      "property": "--shadow-button",
+      "valueText": "0 4px 12px rgb(99 91 255 / 25%)",
+      "important": false,
+      "sourceId": "demo-source",
+      "parsedOk": true,
+      "winner": true
+    }
+  },
+  "sources": {
+    "demo-source": {
+      "id": "demo-source",
+      "sheet": {
+        "id": "demo-sheet",
+        "href": null,
+        "kind": "style",
+        "ownerNodePath": "head > style",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        },
+        "sheetIndex": 0,
+        "media": null,
+        "disabled": false,
+        "readable": true,
+        "reparsed": false,
+        "importChain": [],
+        "ruleCount": 12
+      },
+      "origin": "author",
+      "important": false,
+      "layerPath": [],
+      "layerOrder": 0,
+      "contextDepth": 0,
+      "selectorText": ":root",
+      "matchedSelector": ":root",
+      "specificity": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      },
+      "documentOrder": 0,
+      "ruleIndexPath": [
+        0
+      ],
+      "conditions": [],
+      "pseudoElement": null
+    }
+  },
+  "tokensInScope": {
+    "--brand-500": {
+      "name": "--brand-500",
+      "category": "color",
+      "categoryConfidence": 1,
+      "categoryAlternates": [],
+      "declarations": [
+        "--brand-500"
+      ],
+      "winningDeclarationId": "--brand-500",
+      "declaredOn": {
+        "id": "root",
+        "cssPath": ":root",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        }
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "value": "#635bff"
+        }
+      ],
+      "registration": null,
+      "rawValue": "#635bff",
+      "computedValue": "#635bff",
+      "terminalValue": "#635bff",
+      "aliasesTo": [],
+      "aliasedBy": [
+        "--action-bg"
+      ],
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "demo-button",
+            "cssPath": "[data-testid=\"primary-action\"]",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "demo",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "background-color"
+        ],
+        "truncated": false
+      },
+      "unusedOnPage": false
+    },
+    "--action-bg": {
+      "name": "--action-bg",
+      "category": "color",
+      "categoryConfidence": 1,
+      "categoryAlternates": [],
+      "declarations": [
+        "--action-bg"
+      ],
+      "winningDeclarationId": "--action-bg",
+      "declaredOn": {
+        "id": "root",
+        "cssPath": ":root",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        }
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "value": "var(--brand-500)"
+        }
+      ],
+      "registration": null,
+      "rawValue": "var(--brand-500)",
+      "computedValue": "#635bff",
+      "terminalValue": "#635bff",
+      "aliasesTo": [
+        "--brand-500"
+      ],
+      "aliasedBy": [],
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "demo-button",
+            "cssPath": "[data-testid=\"primary-action\"]",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "demo",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "background-color"
+        ],
+        "truncated": false
+      },
+      "unusedOnPage": false
+    },
+    "--font-body": {
+      "name": "--font-body",
+      "category": "typography",
+      "categoryConfidence": 1,
+      "categoryAlternates": [],
+      "declarations": [
+        "--font-body"
+      ],
+      "winningDeclarationId": "--font-body",
+      "declaredOn": {
+        "id": "root",
+        "cssPath": ":root",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        }
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "value": "Inter, system-ui, sans-serif"
+        }
+      ],
+      "registration": null,
+      "rawValue": "Inter, system-ui, sans-serif",
+      "computedValue": "Inter, system-ui, sans-serif",
+      "terminalValue": "Inter, system-ui, sans-serif",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "demo-button",
+            "cssPath": "[data-testid=\"primary-action\"]",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "demo",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "font-family"
+        ],
+        "truncated": false
+      },
+      "unusedOnPage": false
+    },
+    "--font-size": {
+      "name": "--font-size",
+      "category": "typography",
+      "categoryConfidence": 1,
+      "categoryAlternates": [],
+      "declarations": [
+        "--font-size"
+      ],
+      "winningDeclarationId": "--font-size",
+      "declaredOn": {
+        "id": "root",
+        "cssPath": ":root",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        }
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "value": "16px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "16px",
+      "computedValue": "16px",
+      "terminalValue": "16px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "demo-button",
+            "cssPath": "[data-testid=\"primary-action\"]",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "demo",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "font-size"
+        ],
+        "truncated": false
+      },
+      "unusedOnPage": false
+    },
+    "--space-4": {
+      "name": "--space-4",
+      "category": "space",
+      "categoryConfidence": 1,
+      "categoryAlternates": [],
+      "declarations": [
+        "--space-4"
+      ],
+      "winningDeclarationId": "--space-4",
+      "declaredOn": {
+        "id": "root",
+        "cssPath": ":root",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        }
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "value": "16px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "16px",
+      "computedValue": "16px",
+      "terminalValue": "16px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "demo-button",
+            "cssPath": "[data-testid=\"primary-action\"]",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "demo",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "padding-top"
+        ],
+        "truncated": false
+      },
+      "unusedOnPage": false
+    },
+    "--radius-button": {
+      "name": "--radius-button",
+      "category": "radius",
+      "categoryConfidence": 1,
+      "categoryAlternates": [],
+      "declarations": [
+        "--radius-button"
+      ],
+      "winningDeclarationId": "--radius-button",
+      "declaredOn": {
+        "id": "root",
+        "cssPath": ":root",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        }
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "value": "10px"
+        }
+      ],
+      "registration": null,
+      "rawValue": "10px",
+      "computedValue": "10px",
+      "terminalValue": "10px",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "demo-button",
+            "cssPath": "[data-testid=\"primary-action\"]",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "demo",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "border-top-left-radius"
+        ],
+        "truncated": false
+      },
+      "unusedOnPage": false
+    },
+    "--shadow-button": {
+      "name": "--shadow-button",
+      "category": "shadow",
+      "categoryConfidence": 1,
+      "categoryAlternates": [],
+      "declarations": [
+        "--shadow-button"
+      ],
+      "winningDeclarationId": "--shadow-button",
+      "declaredOn": {
+        "id": "root",
+        "cssPath": ":root",
+        "tagName": "html",
+        "treeScope": {
+          "id": "document",
+          "kind": "document",
+          "depth": 0
+        }
+      },
+      "scopes": [
+        {
+          "selector": ":root",
+          "ctx": {
+            "media": null,
+            "supports": null,
+            "layerPath": [],
+            "container": null
+          },
+          "value": "0 4px 12px rgb(99 91 255 / 25%)"
+        }
+      ],
+      "registration": null,
+      "rawValue": "0 4px 12px rgb(99 91 255 / 25%)",
+      "computedValue": "0 4px 12px rgb(99 91 255 / 25%)",
+      "terminalValue": "0 4px 12px rgb(99 91 255 / 25%)",
+      "aliasesTo": [],
+      "aliasedBy": [],
+      "usedBy": {
+        "ruleCount": 1,
+        "elementCount": 3,
+        "sampleElements": [
+          {
+            "id": "demo-button",
+            "cssPath": "[data-testid=\"primary-action\"]",
+            "tagName": "button",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "documentId": "demo",
+            "frameId": 0
+          }
+        ],
+        "properties": [
+          "box-shadow"
+        ],
+        "truncated": false
+      },
+      "unusedOnPage": false
+    }
+  },
+  "sheets": [
+    {
+      "id": "demo-sheet",
+      "href": null,
+      "kind": "style",
+      "ownerNodePath": "head > style",
+      "treeScope": {
+        "id": "document",
+        "kind": "document",
+        "depth": 0
+      },
+      "sheetIndex": 0,
+      "media": null,
+      "disabled": false,
+      "readable": true,
+      "reparsed": false,
+      "importChain": [],
+      "ruleCount": 12
+    }
+  ],
+  "layerOrder": [],
+  "registrations": [],
+  "diagnostics": [],
+  "resolverMode": "cssom",
+  "confidence": "exact",
+  "timings": {
+    "totalMs": 2.4,
+    "indexMs": 1,
+    "matchMs": 0.5,
+    "resolveMs": 0.9,
+    "sheetFetchMs": 0
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-store/
+dist-dev/
+playwright-report/
+test-results/
+releases/
+__pycache__/
+.DS_Store
+*.log

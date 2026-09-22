@@ -1,0 +1,2371 @@
+[
+  {
+    "sheet": {
+      "id": "sheet-1",
+      "href": null,
+      "kind": "style",
+      "ownerNodePath": "html > head > style",
+      "treeScope": {
+        "id": "document",
+        "kind": "document",
+        "depth": 0
+      },
+      "sheetIndex": 0,
+      "media": null,
+      "disabled": false,
+      "readable": true,
+      "reparsed": false,
+      "importChain": [],
+      "ruleCount": 15
+    },
+    "rules": [
+      {
+        "source": {
+          "id": "sheet-1:0",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ":root",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 0,
+          "ruleIndexPath": [
+            0
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:0:--brand-500",
+            "property": "--brand-500",
+            "valueText": "#635bff",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--brand-600",
+            "property": "--brand-600",
+            "valueText": "#5046e5",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--action-bg",
+            "property": "--action-bg",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--ink",
+            "property": "--ink",
+            "valueText": "#18202d",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--muted",
+            "property": "--muted",
+            "valueText": "#667085",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--surface",
+            "property": "--surface",
+            "valueText": "#fff",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--canvas",
+            "property": "--canvas",
+            "valueText": "#f4f5f8",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--space-2",
+            "property": "--space-2",
+            "valueText": "8px",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--space-4",
+            "property": "--space-4",
+            "valueText": "16px",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--radius-card",
+            "property": "--radius-card",
+            "valueText": "18px",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--radius-button",
+            "property": "--radius-button",
+            "valueText": "10px",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--font-body",
+            "property": "--font-body",
+            "valueText": "Inter,ui-sans-serif,system-ui,sans-serif",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--font-size",
+            "property": "--font-size",
+            "valueText": "16px",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--shadow-card",
+            "property": "--shadow-card",
+            "valueText": "0 8px 32px rgb(23 34 57 / 8%)",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:0:--shadow-button",
+            "property": "--shadow-button",
+            "valueText": "0 4px 12px rgb(99 91 255 / 25%)",
+            "important": false,
+            "sourceId": "sheet-1:0",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:1",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": "*",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 0,
+            "c": 0
+          },
+          "documentOrder": 1,
+          "ruleIndexPath": [
+            1
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:1:box-sizing",
+            "property": "box-sizing",
+            "valueText": "border-box",
+            "important": false,
+            "sourceId": "sheet-1:1",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:2",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": "body",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 0,
+            "c": 1
+          },
+          "documentOrder": 2,
+          "ruleIndexPath": [
+            2
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:2:margin",
+            "property": "margin",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:2:margin-top",
+            "property": "margin-top",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:2:margin-right",
+            "property": "margin-right",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:2:margin-bottom",
+            "property": "margin-bottom",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:2:margin-left",
+            "property": "margin-left",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:2:background",
+            "property": "background",
+            "valueText": "var(--canvas)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:2:background-color",
+            "property": "background-color",
+            "valueText": "var(--canvas)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--canvas)"
+          },
+          {
+            "id": "sheet-1:2:background-image",
+            "property": "background-image",
+            "valueText": "var(--canvas)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--canvas)"
+          },
+          {
+            "id": "sheet-1:2:background-position",
+            "property": "background-position",
+            "valueText": "var(--canvas)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--canvas)"
+          },
+          {
+            "id": "sheet-1:2:background-size",
+            "property": "background-size",
+            "valueText": "var(--canvas)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--canvas)"
+          },
+          {
+            "id": "sheet-1:2:background-repeat",
+            "property": "background-repeat",
+            "valueText": "var(--canvas)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--canvas)"
+          },
+          {
+            "id": "sheet-1:2:color",
+            "property": "color",
+            "valueText": "var(--ink)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:2:font",
+            "property": "font",
+            "valueText": "var(--font-size)/1.5 var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:2:font-family",
+            "property": "font-family",
+            "valueText": "var(--font-size)/1.5 var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+          },
+          {
+            "id": "sheet-1:2:font-size",
+            "property": "font-size",
+            "valueText": "var(--font-size)/1.5 var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+          },
+          {
+            "id": "sheet-1:2:font-weight",
+            "property": "font-weight",
+            "valueText": "var(--font-size)/1.5 var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+          },
+          {
+            "id": "sheet-1:2:font-style",
+            "property": "font-style",
+            "valueText": "var(--font-size)/1.5 var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+          },
+          {
+            "id": "sheet-1:2:font-stretch",
+            "property": "font-stretch",
+            "valueText": "var(--font-size)/1.5 var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+          },
+          {
+            "id": "sheet-1:2:line-height",
+            "property": "line-height",
+            "valueText": "var(--font-size)/1.5 var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "var(--font-size)/1.5 var(--font-body)"
+          },
+          {
+            "id": "sheet-1:2:padding",
+            "property": "padding",
+            "valueText": "48px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:2:padding-top",
+            "property": "padding-top",
+            "valueText": "48px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "48px"
+          },
+          {
+            "id": "sheet-1:2:padding-right",
+            "property": "padding-right",
+            "valueText": "48px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "48px"
+          },
+          {
+            "id": "sheet-1:2:padding-bottom",
+            "property": "padding-bottom",
+            "valueText": "48px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "48px"
+          },
+          {
+            "id": "sheet-1:2:padding-left",
+            "property": "padding-left",
+            "valueText": "48px",
+            "important": false,
+            "sourceId": "sheet-1:2",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "48px"
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:3",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": "main",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 0,
+            "c": 1
+          },
+          "documentOrder": 3,
+          "ruleIndexPath": [
+            3
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:3:max-width",
+            "property": "max-width",
+            "valueText": "1000px",
+            "important": false,
+            "sourceId": "sheet-1:3",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:3:margin",
+            "property": "margin",
+            "valueText": "auto",
+            "important": false,
+            "sourceId": "sheet-1:3",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:3:margin-top",
+            "property": "margin-top",
+            "valueText": "auto",
+            "important": false,
+            "sourceId": "sheet-1:3",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "auto"
+          },
+          {
+            "id": "sheet-1:3:margin-right",
+            "property": "margin-right",
+            "valueText": "auto",
+            "important": false,
+            "sourceId": "sheet-1:3",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "auto"
+          },
+          {
+            "id": "sheet-1:3:margin-bottom",
+            "property": "margin-bottom",
+            "valueText": "auto",
+            "important": false,
+            "sourceId": "sheet-1:3",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "auto"
+          },
+          {
+            "id": "sheet-1:3:margin-left",
+            "property": "margin-left",
+            "valueText": "auto",
+            "important": false,
+            "sourceId": "sheet-1:3",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "margin",
+            "shorthandText": "auto"
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:4",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": "header",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 0,
+            "c": 1
+          },
+          "documentOrder": 4,
+          "ruleIndexPath": [
+            4
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:4:display",
+            "property": "display",
+            "valueText": "flex",
+            "important": false,
+            "sourceId": "sheet-1:4",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:4:align-items",
+            "property": "align-items",
+            "valueText": "center",
+            "important": false,
+            "sourceId": "sheet-1:4",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:4:justify-content",
+            "property": "justify-content",
+            "valueText": "space-between",
+            "important": false,
+            "sourceId": "sheet-1:4",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:4:margin-bottom",
+            "property": "margin-bottom",
+            "valueText": "32px",
+            "important": false,
+            "sourceId": "sheet-1:4",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:5",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": "h1",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 0,
+            "c": 1
+          },
+          "documentOrder": 5,
+          "ruleIndexPath": [
+            5
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:5:font-size",
+            "property": "font-size",
+            "valueText": "32px",
+            "important": false,
+            "sourceId": "sheet-1:5",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:5:letter-spacing",
+            "property": "letter-spacing",
+            "valueText": "-1px",
+            "important": false,
+            "sourceId": "sheet-1:5",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:5:line-height",
+            "property": "line-height",
+            "valueText": "1.2",
+            "important": false,
+            "sourceId": "sheet-1:5",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:6",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ".eyebrow",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 6,
+          "ruleIndexPath": [
+            6
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:6:font-size",
+            "property": "font-size",
+            "valueText": "12px",
+            "important": false,
+            "sourceId": "sheet-1:6",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:6:letter-spacing",
+            "property": "letter-spacing",
+            "valueText": "2px",
+            "important": false,
+            "sourceId": "sheet-1:6",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:6:text-transform",
+            "property": "text-transform",
+            "valueText": "uppercase",
+            "important": false,
+            "sourceId": "sheet-1:6",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:6:color",
+            "property": "color",
+            "valueText": "var(--muted)",
+            "important": false,
+            "sourceId": "sheet-1:6",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:7",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ".grid",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 7,
+          "ruleIndexPath": [
+            7
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:7:display",
+            "property": "display",
+            "valueText": "grid",
+            "important": false,
+            "sourceId": "sheet-1:7",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:7:grid-template-columns",
+            "property": "grid-template-columns",
+            "valueText": "repeat(3, 1fr)",
+            "important": false,
+            "sourceId": "sheet-1:7",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:7:gap",
+            "property": "gap",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:7",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:7:row-gap",
+            "property": "row-gap",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:7",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "gap",
+            "shorthandText": "24px"
+          },
+          {
+            "id": "sheet-1:7:column-gap",
+            "property": "column-gap",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:7",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "gap",
+            "shorthandText": "24px"
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:8",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ".card",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 8,
+          "ruleIndexPath": [
+            8
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:8:background",
+            "property": "background",
+            "valueText": "var(--surface)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:8:background-color",
+            "property": "background-color",
+            "valueText": "var(--surface)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--surface)"
+          },
+          {
+            "id": "sheet-1:8:background-image",
+            "property": "background-image",
+            "valueText": "var(--surface)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--surface)"
+          },
+          {
+            "id": "sheet-1:8:background-position",
+            "property": "background-position",
+            "valueText": "var(--surface)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--surface)"
+          },
+          {
+            "id": "sheet-1:8:background-size",
+            "property": "background-size",
+            "valueText": "var(--surface)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--surface)"
+          },
+          {
+            "id": "sheet-1:8:background-repeat",
+            "property": "background-repeat",
+            "valueText": "var(--surface)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--surface)"
+          },
+          {
+            "id": "sheet-1:8:padding",
+            "property": "padding",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:8:padding-top",
+            "property": "padding-top",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "24px"
+          },
+          {
+            "id": "sheet-1:8:padding-right",
+            "property": "padding-right",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "24px"
+          },
+          {
+            "id": "sheet-1:8:padding-bottom",
+            "property": "padding-bottom",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "24px"
+          },
+          {
+            "id": "sheet-1:8:padding-left",
+            "property": "padding-left",
+            "valueText": "24px",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "24px"
+          },
+          {
+            "id": "sheet-1:8:border-radius",
+            "property": "border-radius",
+            "valueText": "var(--radius-card)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:8:border-top-left-radius",
+            "property": "border-top-left-radius",
+            "valueText": "var(--radius-card)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-card)"
+          },
+          {
+            "id": "sheet-1:8:border-top-right-radius",
+            "property": "border-top-right-radius",
+            "valueText": "var(--radius-card)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-card)"
+          },
+          {
+            "id": "sheet-1:8:border-bottom-right-radius",
+            "property": "border-bottom-right-radius",
+            "valueText": "var(--radius-card)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-card)"
+          },
+          {
+            "id": "sheet-1:8:border-bottom-left-radius",
+            "property": "border-bottom-left-radius",
+            "valueText": "var(--radius-card)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-card)"
+          },
+          {
+            "id": "sheet-1:8:box-shadow",
+            "property": "box-shadow",
+            "valueText": "var(--shadow-card)",
+            "important": false,
+            "sourceId": "sheet-1:8",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:9",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ".button",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 9,
+          "ruleIndexPath": [
+            9
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:9:border",
+            "property": "border",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:9:border-top-width",
+            "property": "border-top-width",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-top-style",
+            "property": "border-top-style",
+            "valueText": "none",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-top-color",
+            "property": "border-top-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-right-width",
+            "property": "border-right-width",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-right-style",
+            "property": "border-right-style",
+            "valueText": "none",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-right-color",
+            "property": "border-right-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-bottom-width",
+            "property": "border-bottom-width",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-bottom-style",
+            "property": "border-bottom-style",
+            "valueText": "none",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-bottom-color",
+            "property": "border-bottom-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-left-width",
+            "property": "border-left-width",
+            "valueText": "0px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-left-style",
+            "property": "border-left-style",
+            "valueText": "none",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:border-left-color",
+            "property": "border-left-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "0px"
+          },
+          {
+            "id": "sheet-1:9:padding",
+            "property": "padding",
+            "valueText": "12px 20px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:9:padding-top",
+            "property": "padding-top",
+            "valueText": "12px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "12px 20px"
+          },
+          {
+            "id": "sheet-1:9:padding-right",
+            "property": "padding-right",
+            "valueText": "20px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "12px 20px"
+          },
+          {
+            "id": "sheet-1:9:padding-bottom",
+            "property": "padding-bottom",
+            "valueText": "12px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "12px 20px"
+          },
+          {
+            "id": "sheet-1:9:padding-left",
+            "property": "padding-left",
+            "valueText": "20px",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "12px 20px"
+          },
+          {
+            "id": "sheet-1:9:border-radius",
+            "property": "border-radius",
+            "valueText": "var(--radius-button)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:9:border-top-left-radius",
+            "property": "border-top-left-radius",
+            "valueText": "var(--radius-button)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-button)"
+          },
+          {
+            "id": "sheet-1:9:border-top-right-radius",
+            "property": "border-top-right-radius",
+            "valueText": "var(--radius-button)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-button)"
+          },
+          {
+            "id": "sheet-1:9:border-bottom-right-radius",
+            "property": "border-bottom-right-radius",
+            "valueText": "var(--radius-button)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-button)"
+          },
+          {
+            "id": "sheet-1:9:border-bottom-left-radius",
+            "property": "border-bottom-left-radius",
+            "valueText": "var(--radius-button)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "var(--radius-button)"
+          },
+          {
+            "id": "sheet-1:9:background",
+            "property": "background",
+            "valueText": "var(--action-bg)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:9:background-color",
+            "property": "background-color",
+            "valueText": "var(--action-bg)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--action-bg)"
+          },
+          {
+            "id": "sheet-1:9:background-image",
+            "property": "background-image",
+            "valueText": "var(--action-bg)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--action-bg)"
+          },
+          {
+            "id": "sheet-1:9:background-position",
+            "property": "background-position",
+            "valueText": "var(--action-bg)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--action-bg)"
+          },
+          {
+            "id": "sheet-1:9:background-size",
+            "property": "background-size",
+            "valueText": "var(--action-bg)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--action-bg)"
+          },
+          {
+            "id": "sheet-1:9:background-repeat",
+            "property": "background-repeat",
+            "valueText": "var(--action-bg)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "var(--action-bg)"
+          },
+          {
+            "id": "sheet-1:9:color",
+            "property": "color",
+            "valueText": "white",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:9:font",
+            "property": "font",
+            "valueText": "600 14px var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:9:font-family",
+            "property": "font-family",
+            "valueText": "600 14px var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "600 14px var(--font-body)"
+          },
+          {
+            "id": "sheet-1:9:font-size",
+            "property": "font-size",
+            "valueText": "600 14px var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "600 14px var(--font-body)"
+          },
+          {
+            "id": "sheet-1:9:font-weight",
+            "property": "font-weight",
+            "valueText": "600 14px var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "600 14px var(--font-body)"
+          },
+          {
+            "id": "sheet-1:9:font-style",
+            "property": "font-style",
+            "valueText": "600 14px var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "600 14px var(--font-body)"
+          },
+          {
+            "id": "sheet-1:9:font-stretch",
+            "property": "font-stretch",
+            "valueText": "600 14px var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "600 14px var(--font-body)"
+          },
+          {
+            "id": "sheet-1:9:line-height",
+            "property": "line-height",
+            "valueText": "600 14px var(--font-body)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "font",
+            "shorthandText": "600 14px var(--font-body)"
+          },
+          {
+            "id": "sheet-1:9:box-shadow",
+            "property": "box-shadow",
+            "valueText": "var(--shadow-button)",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:9:cursor",
+            "property": "cursor",
+            "valueText": "pointer",
+            "important": false,
+            "sourceId": "sheet-1:9",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:10",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ".secondary",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 10,
+          "ruleIndexPath": [
+            10
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:10:background",
+            "property": "background",
+            "valueText": "transparent",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:10:background-color",
+            "property": "background-color",
+            "valueText": "transparent",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "transparent"
+          },
+          {
+            "id": "sheet-1:10:background-image",
+            "property": "background-image",
+            "valueText": "initial",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "transparent"
+          },
+          {
+            "id": "sheet-1:10:background-position",
+            "property": "background-position",
+            "valueText": "initial",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "transparent"
+          },
+          {
+            "id": "sheet-1:10:background-size",
+            "property": "background-size",
+            "valueText": "initial",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "transparent"
+          },
+          {
+            "id": "sheet-1:10:background-repeat",
+            "property": "background-repeat",
+            "valueText": "initial",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "transparent"
+          },
+          {
+            "id": "sheet-1:10:color",
+            "property": "color",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:10:box-shadow",
+            "property": "box-shadow",
+            "valueText": "none",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:10:border",
+            "property": "border",
+            "valueText": "1px solid",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:10:border-top-width",
+            "property": "border-top-width",
+            "valueText": "1px",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-top-style",
+            "property": "border-top-style",
+            "valueText": "solid",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-top-color",
+            "property": "border-top-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-right-width",
+            "property": "border-right-width",
+            "valueText": "1px",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-right-style",
+            "property": "border-right-style",
+            "valueText": "solid",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-right-color",
+            "property": "border-right-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-bottom-width",
+            "property": "border-bottom-width",
+            "valueText": "1px",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-bottom-style",
+            "property": "border-bottom-style",
+            "valueText": "solid",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-bottom-color",
+            "property": "border-bottom-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-left-width",
+            "property": "border-left-width",
+            "valueText": "1px",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-left-style",
+            "property": "border-left-style",
+            "valueText": "solid",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          },
+          {
+            "id": "sheet-1:10:border-left-color",
+            "property": "border-left-color",
+            "valueText": "currentcolor",
+            "important": false,
+            "sourceId": "sheet-1:10",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border",
+            "shorthandText": "1px solid"
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:11",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": "p",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 0,
+            "c": 1
+          },
+          "documentOrder": 11,
+          "ruleIndexPath": [
+            11
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:11:color",
+            "property": "color",
+            "valueText": "var(--muted)",
+            "important": false,
+            "sourceId": "sheet-1:11",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:12",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ".badge",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 12,
+          "ruleIndexPath": [
+            12
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:12:display",
+            "property": "display",
+            "valueText": "inline-block",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:12:background",
+            "property": "background",
+            "valueText": "color-mix(in srgb,var(--brand-500) 10%,white)",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:12:background-color",
+            "property": "background-color",
+            "valueText": "color-mix(in srgb,var(--brand-500) 10%,white)",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "color-mix(in srgb,var(--brand-500) 10%,white)"
+          },
+          {
+            "id": "sheet-1:12:background-image",
+            "property": "background-image",
+            "valueText": "color-mix(in srgb,var(--brand-500) 10%,white)",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "color-mix(in srgb,var(--brand-500) 10%,white)"
+          },
+          {
+            "id": "sheet-1:12:background-position",
+            "property": "background-position",
+            "valueText": "color-mix(in srgb,var(--brand-500) 10%,white)",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "color-mix(in srgb,var(--brand-500) 10%,white)"
+          },
+          {
+            "id": "sheet-1:12:background-size",
+            "property": "background-size",
+            "valueText": "color-mix(in srgb,var(--brand-500) 10%,white)",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "color-mix(in srgb,var(--brand-500) 10%,white)"
+          },
+          {
+            "id": "sheet-1:12:background-repeat",
+            "property": "background-repeat",
+            "valueText": "color-mix(in srgb,var(--brand-500) 10%,white)",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "background",
+            "shorthandText": "color-mix(in srgb,var(--brand-500) 10%,white)"
+          },
+          {
+            "id": "sheet-1:12:color",
+            "property": "color",
+            "valueText": "var(--brand-500)",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:12:border-radius",
+            "property": "border-radius",
+            "valueText": "6px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:12:border-top-left-radius",
+            "property": "border-top-left-radius",
+            "valueText": "6px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "6px"
+          },
+          {
+            "id": "sheet-1:12:border-top-right-radius",
+            "property": "border-top-right-radius",
+            "valueText": "6px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "6px"
+          },
+          {
+            "id": "sheet-1:12:border-bottom-right-radius",
+            "property": "border-bottom-right-radius",
+            "valueText": "6px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "6px"
+          },
+          {
+            "id": "sheet-1:12:border-bottom-left-radius",
+            "property": "border-bottom-left-radius",
+            "valueText": "6px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "border-radius",
+            "shorthandText": "6px"
+          },
+          {
+            "id": "sheet-1:12:padding",
+            "property": "padding",
+            "valueText": "4px 8px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:12:padding-top",
+            "property": "padding-top",
+            "valueText": "4px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "4px 8px"
+          },
+          {
+            "id": "sheet-1:12:padding-right",
+            "property": "padding-right",
+            "valueText": "8px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "4px 8px"
+          },
+          {
+            "id": "sheet-1:12:padding-bottom",
+            "property": "padding-bottom",
+            "valueText": "4px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "4px 8px"
+          },
+          {
+            "id": "sheet-1:12:padding-left",
+            "property": "padding-left",
+            "valueText": "8px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false,
+            "shorthandOf": "padding",
+            "shorthandText": "4px 8px"
+          },
+          {
+            "id": "sheet-1:12:font-size",
+            "property": "font-size",
+            "valueText": "12px",
+            "important": false,
+            "sourceId": "sheet-1:12",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:13",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": ".target::before",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 1
+          },
+          "documentOrder": 13,
+          "ruleIndexPath": [
+            13
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:13:content",
+            "property": "content",
+            "valueText": "\"✦\"",
+            "important": false,
+            "sourceId": "sheet-1:13",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:13:margin-right",
+            "property": "margin-right",
+            "valueText": "8px",
+            "important": false,
+            "sourceId": "sheet-1:13",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:13:color",
+            "property": "color",
+            "valueText": "var(--spark,var(--brand-500))",
+            "important": false,
+            "sourceId": "sheet-1:13",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "source": {
+          "id": "sheet-1:14",
+          "sheet": {
+            "id": "sheet-1",
+            "href": null,
+            "kind": "style",
+            "ownerNodePath": "html > head > style",
+            "treeScope": {
+              "id": "document",
+              "kind": "document",
+              "depth": 0
+            },
+            "sheetIndex": 0,
+            "media": null,
+            "disabled": false,
+            "readable": true,
+            "reparsed": false,
+            "importChain": [],
+            "ruleCount": 15
+          },
+          "origin": "author",
+          "important": false,
+          "layerPath": [],
+          "layerOrder": -1,
+          "contextDepth": 0,
+          "selectorText": "[data-theme=\"dark\"]",
+          "matchedSelector": null,
+          "specificity": {
+            "a": 0,
+            "b": 1,
+            "c": 0
+          },
+          "documentOrder": 14,
+          "ruleIndexPath": [
+            14
+          ],
+          "conditions": [],
+          "pseudoElement": null
+        },
+        "declarations": [
+          {
+            "id": "sheet-1:14:--canvas",
+            "property": "--canvas",
+            "valueText": "#16171c",
+            "important": false,
+            "sourceId": "sheet-1:14",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:14:--surface",
+            "property": "--surface",
+            "valueText": "#22242d",
+            "important": false,
+            "sourceId": "sheet-1:14",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:14:--ink",
+            "property": "--ink",
+            "valueText": "#f5f5fa",
+            "important": false,
+            "sourceId": "sheet-1:14",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:14:--muted",
+            "property": "--muted",
+            "valueText": "#a8abba",
+            "important": false,
+            "sourceId": "sheet-1:14",
+            "parsedOk": true,
+            "winner": false
+          },
+          {
+            "id": "sheet-1:14:--brand-500",
+            "property": "--brand-500",
+            "valueText": "#a49eff",
+            "important": false,
+            "sourceId": "sheet-1:14",
+            "parsedOk": true,
+            "winner": false
+          }
+        ]
+      }
+    ],
+    "registrations": []
+  }
+]

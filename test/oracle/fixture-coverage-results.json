@@ -1,0 +1,82 @@
+{
+  "capturedAt": "2026-09-22T09:41:46.741Z",
+  "browser": "153.0.8010.52",
+  "metric": "Presence of selector/property pairs among CDP matched author rules and inherited author rules. Values, order, winners, origin conflicts and shadow internals are NOT measured; this is not a cascade oracle agreement rate.",
+  "fixtures": [
+    {
+      "fixture": "01-basic",
+      "cdpCustomDeclarationPairs": 15,
+      "resolverCustomDeclarationPairs": 15,
+      "sharedPairs": 15,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    },
+    {
+      "fixture": "02-shorthands",
+      "cdpCustomDeclarationPairs": 18,
+      "resolverCustomDeclarationPairs": 18,
+      "sharedPairs": 18,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    },
+    {
+      "fixture": "03-broken",
+      "cdpCustomDeclarationPairs": 81,
+      "resolverCustomDeclarationPairs": 81,
+      "sharedPairs": 81,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    },
+    {
+      "fixture": "04-layers",
+      "cdpCustomDeclarationPairs": 17,
+      "resolverCustomDeclarationPairs": 17,
+      "sharedPairs": 17,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    },
+    {
+      "fixture": "05-tailwind-v4",
+      "cdpCustomDeclarationPairs": 16,
+      "resolverCustomDeclarationPairs": 16,
+      "sharedPairs": 16,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    },
+    {
+      "fixture": "06-hostile",
+      "cdpCustomDeclarationPairs": 15,
+      "resolverCustomDeclarationPairs": 15,
+      "sharedPairs": 15,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    },
+    {
+      "fixture": "07-heavy",
+      "cdpCustomDeclarationPairs": 315,
+      "resolverCustomDeclarationPairs": 315,
+      "sharedPairs": 315,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    },
+    {
+      "fixture": "08-shadow",
+      "cdpCustomDeclarationPairs": 15,
+      "resolverCustomDeclarationPairs": 15,
+      "sharedPairs": 15,
+      "cdpPairsMissingFromResolver": [],
+      "resolverPairsAbsentFromCDP": [],
+      "probeMismatchCount": 0
+    }
+  ],
+  "totalCdpPairs": 492,
+  "totalSharedPairs": 492,
+  "matchingDeclarationCoverage": 1
+}

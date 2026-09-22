@@ -1,0 +1,14 @@
+import { readFile, writeFile, copyFile } from 'node:fs/promises';
+import { join } from 'node:path';
+const dir = 'dist-store';
+const file = join(dir, 'manifest.json');
+const manifest = JSON.parse(await readFile(file, 'utf8'));
+const loader = manifest.content_scripts?.[0]?.js?.[0];
+if (!loader) throw new Error('CRXJS content loader missing from the build');
+await copyFile(join(dir, loader), join(dir, 'content-loader.js'));
+delete manifest.content_scripts;
+delete manifest.host_permissions;
+manifest.permissions = ['scripting', 'storage', 'activeTab'];
+manifest.optional_host_permissions = ['http://*/*', 'https://*/*'];
+await writeFile(file, JSON.stringify(manifest, null, 2) + '\n');
+console.log('Packaged optional-permission build in dist-store. Sites are enabled through the action popup.');
