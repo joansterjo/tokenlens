@@ -2,21 +2,21 @@
   "content": {
     "gzipBytes": 24243,
     "files": [
-      "assets/index.ts-loader-DcZmAFmA.js",
-      "assets/index.ts-D-Chw5Wz.js",
-      "assets/index-CDqI7_yn.js",
-      "assets/version-Yy3HiIhB.js"
+      "assets/index.ts-loader-CnOhYhgP.js",
+      "assets/index.ts-CiyHwTPS.js",
+      "assets/index-DYeWHxxE.js",
+      "assets/version-D_bFHPWv.js"
     ]
   },
   "panel": {
-    "gzipBytes": 109358,
+    "gzipBytes": 109357,
     "files": [
       "src/panel/panel.html",
-      "assets/panel-DviQ4ODt.js",
+      "assets/panel-cDx9IheI.js",
       "assets/modulepreload-polyfill-B5Qt9EMX.js",
       "assets/styles-BGOdCjbL.js",
-      "assets/version-Yy3HiIhB.js",
-      "assets/index-CDqI7_yn.js",
+      "assets/version-D_bFHPWv.js",
+      "assets/index-DYeWHxxE.js",
       "assets/mock-transport-CbuvggpE.js",
       "assets/protocol-CfjwJ40Q.js",
       "assets/shield-check-BXTpkFvd.js",

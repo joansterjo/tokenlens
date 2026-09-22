@@ -6,13 +6,13 @@ Built by [Joan Sterjo](https://github.com/joansterjo).
 
 **[Visit the TokenLens product page](https://joansterjo.github.io/tokenlens/)** for an interactive preview, downloads and installation instructions.
 
-**[Download TokenLens v0.1.3](https://github.com/joansterjo/tokenlens/releases/download/v0.1.3/tokenlens-0.1.3.zip)** · [Download with per-site permissions](https://github.com/joansterjo/tokenlens/releases/download/v0.1.3/tokenlens-0.1.3-optional-permissions.zip) · [Release notes](https://github.com/joansterjo/tokenlens/releases/tag/v0.1.3)
+**[Download TokenLens v0.1.4](https://github.com/joansterjo/tokenlens/releases/download/v0.1.4/tokenlens-0.1.4.zip)** · [Download with per-site permissions](https://github.com/joansterjo/tokenlens/releases/download/v0.1.4/tokenlens-0.1.4-optional-permissions.zip) · [Release notes](https://github.com/joansterjo/tokenlens/releases/tag/v0.1.4)
 
 ![TokenLens interface showing a selected component, design tokens, a color editor and component details](docs/ui/panel-wide.png)
 
 *Interface preview using the included demo data. On a website, the Tokens panel shows the selected element's live styles.*
 
-**Version 0.1.3** fixes a reproduced blank-panel crash when a color has missing CSS components. It also adds an editor recovery screen so you can retry and save existing edits after a rendering failure. See [what changed](docs/releases/v0.1.3.md).
+**Version 0.1.4** refreshes version metadata and release packages. It carries forward the color crash fix and editor recovery from 0.1.3 with no new runtime behavior changes. See [release notes](docs/releases/v0.1.4.md).
 
 ## Install the extension
 
@@ -25,8 +25,8 @@ No coding or build tools are needed to use the downloads. This is an unpacked Ch
 
 | Download | Site access | Best for |
 | --- | --- | --- |
-| [Standard ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.3/tokenlens-0.1.3.zip) | Requests access to all supported pages at installation | Getting started with minimal setup |
-| [Per-site permissions ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.3/tokenlens-0.1.3-optional-permissions.zip) | Requests access to an individual HTTP/HTTPS site when you connect it | Choosing which sites TokenLens can inspect |
+| [Standard ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.4/tokenlens-0.1.4.zip) | Requests access to all supported pages at installation | Getting started with minimal setup |
+| [Per-site permissions ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.4/tokenlens-0.1.4-optional-permissions.zip) | Requests access to an individual HTTP/HTTPS site when you connect it | Choosing which sites TokenLens can inspect |
 
 For the per-site build, open the extension from Chrome's toolbar, click **Connect this site**, and grant the requested site access before inspecting. Reload the page if needed. Install only one build at a time.
 
@@ -41,7 +41,7 @@ Unpacked extensions do not update automatically.
 1. Save any edits you want to keep with **Save session** before updating.
 2. Download the **same build** you installed (standard or per-site), extract it, and replace the contents of your existing extension folder with the new files. Keep the folder path Chrome already uses.
 3. Open `chrome://extensions` and click TokenLens's **Reload** button.
-4. Reload the inspected webpage, then close and reopen DevTools. The popup footer should show **v0.1.3**. Choose **Tokens** from the tab bar or **»** menu to continue.
+4. Reload the inspected webpage, then close and reopen DevTools. The popup footer should show **v0.1.4**. Choose **Tokens** from the tab bar or **»** menu to continue.
 
 For a per-site installation, use **Connect this site** if the popup says access or inspector readiness is needed.
 
@@ -142,7 +142,7 @@ pnpm test:e2e
 
 `pnpm check` runs type checking, lint, Node tests, the production build and bundle-size checks. Browser tests use real browsers. Extension checks need Chromium or Chrome for Testing; on headless Linux, install browser dependencies and run them under Xvfb as shown in [CI](.github/workflows/check.yml). Set `CHROME_PATH` for DOM tests or `CHROMIUM_PATH` for extension tests to select a browser. `pnpm test:perf` runs the performance subset separately.
 
-Version 0.1.3 verification recorded **93 Node tests, 84 browser tests and 16 extension/platform/performance tests passing**. See the [verification report](docs/verification.md) for evidence, measurements and manual checks still outstanding.
+Version 0.1.4 verification recorded **93 Node tests, 84 browser tests and 16 extension/platform/performance tests passing**. See the [verification report](docs/verification.md) for evidence, measurements and manual checks still outstanding.
 
 ## Known limits
 

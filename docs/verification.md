@@ -1,18 +1,22 @@
-# Release verification — TokenLens 0.1.3
+# Release verification — TokenLens 0.1.4
 
 Built as a usable local Chrome extension with source, a production `dist` folder, an optional-permission `dist-store` build, fixtures, tests and a browser UI demo. Practical implementation decisions are in `decisions.md`.
 
-Release 0.1.3 (22 September 2026): **93 Node tests, 84 Chromium browser tests, and 16 Playwright extension/platform/performance tests passed**. Typecheck, lint, both production builds and shipped bundle-size checks passed.
+Release 0.1.4 (22 September 2026): **93 Node tests, 84 Chromium browser tests, and 16 Playwright extension/platform/performance tests passed**. Typecheck, lint, both production builds and shipped bundle-size checks passed. Both ZIPs were checked for matching manifest, shared UI and installation versions; current release links passed the release consistency check.
 
-## Release 0.1.3
+## Release 0.1.4
+
+This is a version and publication refresh. It updates current release metadata, installation guidance and download links, and rebuilds both extension packages under 0.1.4. Runtime behavior is unchanged from 0.1.3; no additional fixes or features are claimed.
+
+## Included behavior from 0.1.3
 
 A reproduced failure used valid CSS colors with missing components, including `oklch(0.5 none none)`. The earlier parser left chroma undefined; the color editor called `toFixed` on it, and the uncaught render error removed the React panel. Missing components are now normalized to finite working values for direct rendering and conversion while the authored CSS text remains available. This does not redefine the distinct meaning of missing components during CSS interpolation.
 
-An editor error boundary now presents recovery controls after rendering failures. It retains session edits, offers JSON and CSS backup, and can retry after clearing the failed view without discarding edit history. CSS recovery export has the normal exportability limits; JSON includes all edits. Theme preference reads and writes are guarded so a localStorage exception does not prevent rendering.
+The editor error boundary introduced in 0.1.3 presents recovery controls after rendering failures. It retains session edits, offers JSON and CSS backup, and can retry after clearing the failed view without discarding edit history. CSS recovery export has the normal exportability limits; JSON includes all edits. Theme preference reads and writes are guarded so a localStorage exception does not prevent rendering.
 
 The failure above is confirmed in a reproduction. The error stack from the originally reported private page has not been observed, so this release does not establish that every cause of a blank panel is fixed.
 
-Version metadata and export-header checks from 0.1.2 remain in place, together with the connection, Elements-selection recovery and source-tracing fixes from 0.1.1. Historical release notes remain in [v0.1.0](releases/v0.1.0.md), [v0.1.1](releases/v0.1.1.md) and [v0.1.2](releases/v0.1.2.md); current changes are in [v0.1.3](releases/v0.1.3.md).
+Version metadata and export-header checks from 0.1.2 remain in place, together with the connection, Elements-selection recovery and source-tracing fixes from 0.1.1. Historical release notes remain in [v0.1.0](releases/v0.1.0.md), [v0.1.1](releases/v0.1.1.md), [v0.1.2](releases/v0.1.2.md) and [v0.1.3](releases/v0.1.3.md); current release details are in [v0.1.4](releases/v0.1.4.md).
 
 ## Functional evidence
 
@@ -46,4 +50,4 @@ Manual docked/undocked EyeDropper behavior, native optional-permission prompting
 
 `pnpm typecheck && pnpm lint && pnpm test && pnpm test:browser && pnpm build && pnpm size-limit && pnpm build:store && pnpm test:e2e`
 
-Extension tests use disposable Chromium profiles; ordinary DOM/CSSOM tests use real Chrome. The local 0.1.3 extension suite passed with `TL_HEADLESS=1`; the CI workflow installs browsers and runs the headful extension checks under Xvfb. Public-site and extended spike scripts are under `test/oracle` and `test/spikes`.
+Extension tests use disposable Chromium profiles; ordinary DOM/CSSOM tests use real Chrome. The local 0.1.4 extension suite passed with `TL_HEADLESS=1`; the CI workflow installs browsers and runs the headful extension checks under Xvfb. Public-site and extended spike scripts are under `test/oracle` and `test/spikes`.
