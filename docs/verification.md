@@ -1,8 +1,16 @@
-# Release verification — TokenLens 0.1.1
+# Release verification — TokenLens 0.1.2
 
 Built as a usable local Chrome extension with source, a production `dist` folder, an optional-permission `dist-store` build, fixtures, tests and a browser UI demo. Practical implementation decisions are in `decisions.md`.
 
-Final checks on 22 September 2026: **85 Node tests, 63 Chromium browser tests, and 16 Playwright extension/platform/performance tests passed**. Typecheck, lint, both production builds and shipped bundle-size checks passed.
+Final release checks (v0.1.2, 22 September 2026): **85 Node tests, 63 Chromium browser tests, and 16 Playwright extension/platform/performance tests passed**. Typecheck, lint, both production builds and shipped bundle-size checks passed.
+
+## Release 0.1.2
+
+This patch aligns the extension manifest, runtime display, website downloads and CSS export header with one release version. The CSS header previously retained an old version string; it now identifies the version that generated the export. Installation and update guidance explains the popup's connection role, the DevTools Tokens editor and how to reload an unpacked installation.
+
+The release-content check passes for current links and rejects a deliberately stale download URL. CSS export tests verify the generated header uses the package version. The popup and narrow panel visibly show v0.1.2; the connected popup fits within Chrome’s 600px height.
+
+The connection, Elements-selection recovery and source-tracing fixes from 0.1.1 are included. Historical release notes remain in [v0.1.0](releases/v0.1.0.md) and [v0.1.1](releases/v0.1.1.md); current changes are in [v0.1.2](releases/v0.1.2.md).
 
 ## Functional evidence
 
@@ -23,13 +31,13 @@ Final checks on 22 September 2026: **85 Node tests, 63 Chromium browser tests, a
 
 Machine-specific raw measurements and browser version are in `perf-results.json`. Size measurements, including dependency closures, are in `bundle-sizes.json`. The measured large fixture has approximately 5,000 elements and 8,000 rules. The content-script dependency graph is about 24 kB gzip and the panel graph about 104 kB gzip. The color budget measures functions imported by the shipped UI; the complete standalone color API is also recorded separately.
 
-Resolver warm latency, local preview apply plus computed-style verification, 50-edit export and cancellable page audit have automated budget assertions. Next-frame intervals are recorded separately: a ~16.7 ms display interval is **not** presented as proof of a strict ≤16 ms pointer-to-painted-pixel result. Cold capture can exceed150ms during initial page layout in concurrent tests, despite faster isolated measurements. Hover-to-paint latency is not measured. The memory check samples 100 picks after explicit garbage collection; it is not a claim of indefinite stability.
+Resolver warm latency, local preview apply plus computed-style verification, 50-edit export and cancellable page audit have automated budget assertions. Next-frame intervals are recorded separately: a ~16.7 ms display interval is **not** presented as proof of a strict ≤16 ms pointer-to-painted-pixel result. Cold capture can exceed 150 ms during initial page layout in concurrent tests, despite faster isolated measurements. Hover-to-paint latency is not measured. The memory check samples 100 picks after explicit garbage collection; it is not a claim of indefinite stability.
 
-## Known gaps against the complete research plan
+## Known limits
 
-This release does not claim every acceptance target in the long-form plan is fulfilled. Consumer counts are explicitly estimated selector matches, not exact visual blast radii. The CDP comparison covers matched declaration presence, not complete cascade winner/order agreement. Shadow-internal and advanced scope/container provenance remain partial and can emit a mismatch; browser-computed values stay authoritative. Source confidence is conservatively aggregated across the inspected stylesheet scope, so an unrelated conditional rule can lower report confidence. Pseudo-elements are listed but do not yet have independent editing reports. Exact rendered-font identification, APCA, recursive cross-origin `@import` recovery and source-file patching are not implemented. See `resolver-verification.md` for precise limits.
+Consumer counts are explicitly estimated selector matches, not exact visual blast radii. The CDP comparison covers matched declaration presence, not complete cascade winner/order agreement. Shadow-internal and advanced scope/container provenance remain partial and can emit a mismatch; browser-computed values stay authoritative. Source confidence is conservatively aggregated across the inspected stylesheet scope, so an unrelated conditional rule can lower report confidence. Pseudo-elements are listed but do not yet have independent editing reports. Exact rendered-font identification, APCA, recursive cross-origin `@import` recovery and source-file patching are not implemented. See `resolver-verification.md` for precise limits.
 
-Manual docked/undocked EyeDropper behavior, native optional-permission prompting and bulk paste into the DevTools declaration editor remain unverified. The synthetic inspector stylesheet's transient reload behavior was measured. Chrome120 is the manifest API floor; actual platform probes ran on Chrome153 and Chromium143/149. No store publication or certification is claimed.
+Manual docked/undocked EyeDropper behavior, native optional-permission prompting and bulk paste into the DevTools declaration editor remain unverified. The synthetic inspector stylesheet's transient reload behavior was measured. Chrome 120 is the manifest API floor; actual platform probes ran on Chrome 153 and Chromium 143/149. No store publication or certification is claimed.
 
 ## Reproduce
 

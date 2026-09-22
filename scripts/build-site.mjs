@@ -1,9 +1,11 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
+import { checkRelease } from './check-release.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const output = join(root, '.site-dist');
+await checkRelease();
 await readFile(join(root, 'site/index.html'));
 await rm(output, { recursive: true, force: true });
 await cp(join(root, 'site'), output, { recursive: true });

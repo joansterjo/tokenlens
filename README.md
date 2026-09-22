@@ -6,11 +6,13 @@ Built by [Joan Sterjo](https://github.com/joansterjo).
 
 **[Visit the TokenLens product page](https://joansterjo.github.io/tokenlens/)** for an interactive preview, downloads and installation instructions.
 
-**[Download TokenLens v0.1.1](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1.zip)** · [Download with per-site permissions](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1-optional-permissions.zip) · [Release notes](https://github.com/joansterjo/tokenlens/releases/tag/v0.1.1)
+**[Download TokenLens v0.1.2](https://github.com/joansterjo/tokenlens/releases/download/v0.1.2/tokenlens-0.1.2.zip)** · [Download with per-site permissions](https://github.com/joansterjo/tokenlens/releases/download/v0.1.2/tokenlens-0.1.2-optional-permissions.zip) · [Release notes](https://github.com/joansterjo/tokenlens/releases/tag/v0.1.2)
 
 ![TokenLens interface showing a selected component, design tokens, a color editor and component details](docs/ui/panel-wide.png)
 
 *Interface preview using the included demo data. On a website, the Tokens panel shows the selected element's live styles.*
+
+**Version 0.1.2** aligns the installed version, download names and CSS export header. It includes the connection, onboarding and computed-value fixes from 0.1.1. See [what changed](docs/releases/v0.1.2.md).
 
 ## Install the extension
 
@@ -23,16 +25,25 @@ No coding or build tools are needed to use the downloads. This is an unpacked Ch
 
 | Download | Site access | Best for |
 | --- | --- | --- |
-| [Standard ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1.zip) | Requests access to all supported pages at installation | Getting started with minimal setup |
-| [Per-site permissions ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.1/tokenlens-0.1.1-optional-permissions.zip) | Requests access to an individual HTTP/HTTPS site when you connect it | Choosing which sites TokenLens can inspect |
+| [Standard ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.2/tokenlens-0.1.2.zip) | Requests access to all supported pages at installation | Getting started with minimal setup |
+| [Per-site permissions ZIP](https://github.com/joansterjo/tokenlens/releases/download/v0.1.2/tokenlens-0.1.2-optional-permissions.zip) | Requests access to an individual HTTP/HTTPS site when you connect it | Choosing which sites TokenLens can inspect |
 
 For the per-site build, open the extension from Chrome's toolbar, click **Connect this site**, and grant the requested site access before inspecting. Reload the page if needed. Install only one build at a time.
 
 The popup shows the current site, access permission and inspector readiness. Once connected, close the popup and choose **Tokens** in Chrome DevTools; check the **»** overflow menu. If DevTools was already open when you installed or updated TokenLens, close and reopen DevTools so Chrome registers the Tokens tab.
 
-**Updating an unpacked installation:** download the same build, extract it into your existing extension folder, then click TokenLens's **Reload** button in `chrome://extensions`. Reload the inspected webpage and close/reopen DevTools. The popup footer shows the installed version.
-
 For local HTML files, use the standard build and enable **Allow access to file URLs** in the extension's details. The manifest requires Chrome 120 or newer; see [verification](docs/verification.md) for the browser versions actually tested.
+
+### Update an existing installation
+
+Unpacked extensions do not update automatically.
+
+1. Save any edits you want to keep with **Save session** before updating.
+2. Download the **same build** you installed (standard or per-site), extract it, and replace the contents of your existing extension folder with the new files. Keep the folder path Chrome already uses.
+3. Open `chrome://extensions` and click TokenLens's **Reload** button.
+4. Reload the inspected webpage, then close and reopen DevTools. The popup footer should show **v0.1.2**. Choose **Tokens** from the tab bar or **»** menu to continue.
+
+For a per-site installation, use **Connect this site** if the popup says access or inspector readiness is needed.
 
 ## Pick → edit → export
 
@@ -105,7 +116,7 @@ pnpm build
 
 Load the generated **`dist`** folder through `chrome://extensions`. `pnpm build:store` produces the per-site permissions build in **`dist-store`**; the script name does not imply Chrome Web Store publication.
 
-To rebuild both downloadable ZIPs and their `SHA256SUMS` file in **`releases`**, run `pnpm package`. Release packaging also requires **Python 3**.
+To rebuild both downloadable ZIPs and their `SHA256SUMS` file in **`releases`**, run `pnpm package`. Release packaging also requires **Python 3**. `package.json` supplies the version for the manifest, extension UI and CSS export header. Update the current README, product page and release notes when bumping it; `pnpm check:release` rejects stale current-release links before packaging or deploying the website.
 
 The product website lives in **`site`**. Run `pnpm site:preview` to build and preview it at `http://127.0.0.1:4176` (Python 3 required for the preview server), or `pnpm site:build` for the static output in **`.site-dist`**. Changes to the website on `main` deploy automatically to GitHub Pages through the [Pages workflow](.github/workflows/pages.yml).
 
@@ -127,7 +138,7 @@ pnpm test:e2e
 
 `pnpm check` runs type checking, lint, Node tests, the production build and bundle-size checks. Browser tests use real browsers. Extension checks need Chromium or Chrome for Testing; on headless Linux, install browser dependencies and run them under Xvfb as shown in [CI](.github/workflows/check.yml). Set `CHROME_PATH` for DOM tests or `CHROMIUM_PATH` for extension tests to select a browser. `pnpm test:perf` runs the performance subset separately.
 
-Version 0.1.1 verification recorded **85 Node tests, 63 browser tests and 16 extension/platform/performance tests passing**. See the [verification report](docs/verification.md) for evidence, measurements and manual checks still outstanding.
+Version 0.1.2 verification recorded **85 Node tests, 63 browser tests and 16 extension/platform/performance tests passing**. See the [verification report](docs/verification.md) for evidence, measurements and manual checks still outstanding.
 
 ## Known limits
 

@@ -1,20 +1,22 @@
 {
   "content": {
-    "gzipBytes": 24124,
+    "gzipBytes": 24240,
     "files": [
-      "assets/index.ts-loader-BcQG5Jd9.js",
-      "assets/index.ts-D9Aj-Vu0.js",
-      "assets/index-Dh4n6Zka.js"
+      "assets/index.ts-loader-Y2uVpxMj.js",
+      "assets/index.ts-CZmoiHWk.js",
+      "assets/index-DAl3luir.js",
+      "assets/version-DspXt7v7.js"
     ]
   },
   "panel": {
-    "gzipBytes": 106878,
+    "gzipBytes": 107022,
     "files": [
       "src/panel/panel.html",
-      "assets/panel-D9Y-QtuD.js",
+      "assets/panel-DXmvLvZO.js",
       "assets/modulepreload-polyfill-B5Qt9EMX.js",
       "assets/styles-BGOdCjbL.js",
-      "assets/index-Dh4n6Zka.js",
+      "assets/version-DspXt7v7.js",
+      "assets/index-DAl3luir.js",
       "assets/mock-transport-D9lypESi.js",
       "assets/protocol-CfjwJ40Q.js",
       "assets/shield-check-BXTpkFvd.js",

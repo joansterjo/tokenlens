@@ -1,4 +1,5 @@
 import type { Edit } from '../model';
+import { VERSION } from '../../shared/version';
 import { isSafeCssFragment, isSafeProperty, selectorForEdit } from '../selector';
 
 export type ExportTarget = 'stylus' | 'overrides' | 'flat' | 'patch';
@@ -36,7 +37,7 @@ export function emitCSS(edits: Edit[], options: EmitOptions = {}): string {
     if (previous?.key === key) previous.edits.push(edit);
     else groups.push({ key, selector, ctx, edits: [edit] });
   }
-  const header = [`/*!tokenlens-session v1`, ` * url: ${safeComment(options.url ?? '')}`, ` * generated: ${safeComment(options.generatedAt ?? 'not recorded')}`, ` * tool: tokenlens ${safeComment(options.toolVersion ?? '0.1.0')}`, ` * edits: ${edits.filter(edit => edit.enabled).length}; target: ${target}`, ' */'];
+  const header = [`/*!tokenlens-session v1`, ` * url: ${safeComment(options.url ?? '')}`, ` * generated: ${safeComment(options.generatedAt ?? 'not recorded')}`, ` * tool: tokenlens ${safeComment(options.toolVersion ?? VERSION)}`, ` * edits: ${edits.filter(edit => edit.enabled).length}; target: ${target}`, ' */'];
   if (target === 'overrides') header.push('/* Chrome DevTools: Sources → Overrides → choose a folder; save this CSS as an override for a loaded stylesheet. */');
   if (target === 'flat') header.push('/* Temporary current-state preview. Conditional wrappers are removed; reload discards inspector edits. */');
   if (target === 'patch') header.push('/* BEST-EFFORT SOURCE SUGGESTION. Review source hints before editing files; this is not an applicable patch. */');

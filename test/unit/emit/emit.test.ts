@@ -1,12 +1,14 @@
 import { expect, test } from 'vitest';
 import type { Edit } from '../../../src/core/model';
 import { emitCSS, parseSession, serializeSession } from '../../../src/core/emit';
+import { version } from '../../../package.json';
 export const makeEdit = (overrides: Partial<Edit> = {}): Edit => ({ id: 'test', mode: 'token', property: '--brand', scopeSelector: ':root', ctx: { media: null, supports: null, container: null, layerPath: [] }, treeScope: { id: 'document', kind: 'document', depth: 0 }, from: 'red', to: 'blue', rung: 'doubled', verified: true, enabled: true, chainHint: [], srcHint: null, blastRadius: 1, exportable: true, ...overrides });
 
 test('export groups edits and retains authored syntax, priority and conditions', () => {
   const first = makeEdit({ ctx: { media: '(min-width: 300px)', supports: '(display:grid)', container: null, layerPath: ['tokens'] }, to: 'oklch(.6 .2 250)' });
   const second = makeEdit({ ...first, id: 'second', property: '--space', to: '12px' });
   const css = emitCSS([second, first]);
+  expect(css).toContain(` * tool: tokenlens ${version}\n`);
   expect(css).toContain('@media (min-width: 300px)'); expect(css).toContain('@supports (display:grid)');
   expect(css).not.toContain('@layer'); expect(css.match(/:root:root \{/g)).toHaveLength(1);
   expect(css).toContain('--brand: oklch(.6 .2 250);');

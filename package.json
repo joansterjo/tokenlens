@@ -1,6 +1,6 @@
 {
   "name": "tokenlens",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Joan Sterjo",
   "description": "A design token studio inside Chrome DevTools.",
   "repository": { "type": "git", "url": "https://github.com/joansterjo/tokenlens.git" },
@@ -14,7 +14,8 @@
     "site:preview": "pnpm site:build && python3 -m http.server 4176 --bind 127.0.0.1 --directory .site-dist",
     "build": "tsc --noEmit && vite build",
     "build:store": "tsc --noEmit && vite build --mode store && node scripts/package-store.mjs",
-    "package": "pnpm build && pnpm size-limit && pnpm build:store && python3 scripts/package-release.py",
+    "package": "pnpm check:release && pnpm build && pnpm size-limit && pnpm build:store && python3 scripts/package-release.py",
+    "check:release": "node scripts/check-release.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src test scripts",
     "test": "vitest run --project node",

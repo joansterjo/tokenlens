@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { VERSION } from '../shared/version';
 import { createRoot } from 'react-dom/client';
 import { AlertCircle, ArrowUpRight, Check, Globe2, Link2, LoaderCircle, RefreshCw, ShieldCheck } from 'lucide-react';
 import type { ConnectionResponse, SiteConnection } from '../shared/connection';
@@ -7,7 +8,7 @@ import './popup.css';
 
 export function Popup() {
   const extensionAvailable = typeof chrome !== 'undefined' && Boolean(chrome.runtime?.id && chrome.tabs?.query);
-  const version = extensionAvailable ? chrome.runtime.getManifest?.().version : undefined;
+  const version = (extensionAvailable ? chrome.runtime.getManifest?.().version : undefined) ?? VERSION;
   const [status, setStatus] = useState<SiteConnection | null>(null);
   const [loading, setLoading] = useState(extensionAvailable);
   const [busy, setBusy] = useState<'connect' | null>(null);

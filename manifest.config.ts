@@ -1,9 +1,10 @@
 import { defineManifest } from '@crxjs/vite-plugin';
+import { VERSION } from './src/shared/version';
 
 export default defineManifest(({ mode }) => ({
   manifest_version: 3,
   name: 'TokenLens — Design token studio',
-  version: '0.1.1',
+  version: VERSION,
   description: 'Pick elements, trace design tokens, edit styles live, and export CSS. Built by Joan Sterjo.',
   minimum_chrome_version: '120',
   permissions: mode === 'store' ? ['scripting', 'storage', 'activeTab'] : ['scripting', 'storage'],

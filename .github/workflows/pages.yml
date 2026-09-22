@@ -7,6 +7,11 @@ on:
       - 'site/**'
       - 'docs/ui/**'
       - 'scripts/build-site.mjs'
+      - 'scripts/check-release.mjs'
+      - 'package.json'
+      - 'README.md'
+      - 'docs/verification.md'
+      - 'docs/releases/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
