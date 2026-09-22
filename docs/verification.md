@@ -1,6 +1,6 @@
 # Release verification — TokenLens 0.1.0
 
-Built as a usable local Chrome extension with source, a production `dist` folder, an optional-permission `dist-store` build, fixtures, tests and a browser UI demo. The original plan remains in `TOKENLENS-BUILD-PLAN.md`; practical implementation decisions are in `decisions.md`.
+Built as a usable local Chrome extension with source, a production `dist` folder, an optional-permission `dist-store` build, fixtures, tests and a browser UI demo. Practical implementation decisions are in `decisions.md`.
 
 Final checks on 22 September 2026: **80 Node tests, 54 Chromium browser tests, and 14 Playwright extension/platform/performance tests passed**. Typecheck, lint, both production builds and shipped bundle-size checks passed.
 

@@ -122,9 +122,3 @@ The initial release verification recorded **80 Node tests, 54 browser tests and 
 - Open shadow-root support is partial; some internal edits are preview-only. Closed shadow roots, browser UI, the Chrome Web Store, the built-in PDF viewer and canvas/video pixels cannot be inspected as ordinary DOM elements. Frame inspection depends on permissions.
 - Pseudo-elements are listed but do not have independent editing reports. Exact rendered-font identification, APCA, recursive cross-origin `@import` recovery and automatic source-file patching are not implemented.
 - Native per-site permission prompts, docked/undocked EyeDropper behavior and bulk declaration-editor paste still need manual verification. See [verification](docs/verification.md) and [resolver coverage](docs/resolver-verification.md).
-
-## Project notes
-
-[Original build plan](docs/TOKENLENS-BUILD-PLAN.md) · [Implementation decisions](docs/decisions.md) · [Platform probes](docs/spikes.md) · [Public-site field notes](docs/field-notes.md)
-
-Found a bug or have a design workflow to improve? [Open an issue](https://github.com/joansterjo/tokenlens/issues) with your Chrome version, reproduction steps and a public example or minimal HTML fixture where possible.
